@@ -21,8 +21,8 @@ const Header = () => {
        </a></li>
        <li><a href="#" className="links text-white">About</a></li>
        <div className="btn-container">
-       <button className='p-2  m-2 mx-4 rounded-full border-2 border-blue-500 bg-white font-semibold font-sans'>LOGIN</button>
-       <button className='p-2  m-2 mx-4 rounded-full border-2 border-blue-500 bg-white font-semibold font-sans'>SIGNUP</button>
+       <button className='p-2  m-2 mx-4 rounded-full border-2 border-blue-500 bg-white font-semibold font-sans'>Login</button>
+       <button className='p-2  m-2 mx-4 rounded-full border-2 border-blue-500 bg-white font-semibold font-sans'>Signup</button>
     </div>
     </ul>
    
