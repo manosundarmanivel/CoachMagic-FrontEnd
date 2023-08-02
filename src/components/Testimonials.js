@@ -4,27 +4,34 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import { Navigation, Pagination,  A11y } from "swiper/modules";
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 
 const Testimonials = () => {
   return (
-    <div>
+    <div className="px-4 sm:px-6 lg:px-8">
         <h1 className='text-3xl font-sans font-bold text-center pb-20'>Here are our users <br/> Testimonials</h1>
         <Swiper
-      modules={[Navigation, Pagination,  A11y]}
-      spaceBetween={10}
-      slidesPerView={3}
+      modules={[Navigation, Pagination, Scrollbar, A11y]}
+      spaceBetween={0}
+      slidesPerView={1} 
+      breakpoints={{
+       
+        640: { slidesPerView: 1 }, 
+        768: { slidesPerView: 2 }, 
+        1024: { slidesPerView: 3 }, 
+      }}
       navigation
       pagination={{ clickable: true }}
-     
+      autoplay={{delay:2000}}
       onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log("slide change")}
+      onSlideChange={() => console.log('slide change')}
+      
     >
       <SwiperSlide>
-        <div className="pl-10 pb-8">
+        <div className="">
           <div className="w-[400px] h-48 shadow-lg m-3 p-5 rounded-lg">
             <div>
-              <div className="flex">
+              <div className="flex ">
                 <img
                   className="h-14 rounded-full"
                   src="https://www.mecgale.com/wp-content/uploads/2017/08/dummy-profile.png"
@@ -46,8 +53,8 @@ const Testimonials = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="pl-10 pb-8">
-          <div className="w-[400px] h-48 shadow-lg m-3 p-5 rounded-lg">
+        <div className="pl-10 pb-8 ">
+          <div className="w-[400px] h-48 sm:w-[250px]  shadow-lg m-3 p-5 rounded-lg">
             <div>
               <div className="flex">
                 <img
