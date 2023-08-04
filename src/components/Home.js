@@ -30,7 +30,7 @@ const Home = () => {
         </div>
       </div>
       <div>
-        <img className="h-[600px] p-20 " src={HomeImg} />
+        <img className="h-[600px] p-10 pl-20 " src={HomeImg} />
         
       </div>
       </div>
