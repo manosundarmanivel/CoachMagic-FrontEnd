@@ -8,8 +8,8 @@ import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 
 const Testimonials = () => {
   return (
-    <div className="px-4 sm:px-6 lg:px-8">
-        <h1 className='text-3xl font-sans font-bold text-center pb-20'>Here are our users <br/> Testimonials</h1>
+    <div className="px-4 sm:px-6 lg:px-8 bg-[#141414]">
+        <h1 className='text-3xl font-sans font-semibold text-center pb-20 text-white'>Here are our users <br/> Testimonials</h1>
         <Swiper
       modules={[Navigation, Pagination, Scrollbar, A11y]}
       spaceBetween={0}
@@ -29,7 +29,7 @@ const Testimonials = () => {
     >
       <SwiperSlide>
         <div className="">
-          <div className="w-[400px] h-48 shadow-lg m-3 p-5 rounded-lg">
+          <div className="w-[400px] h-48 shadow-lg m-3 p-5 rounded-lg bg-neutral-800">
             <div>
               <div className="flex ">
                 <img
@@ -37,13 +37,13 @@ const Testimonials = () => {
                   src="https://www.mecgale.com/wp-content/uploads/2017/08/dummy-profile.png"
                 />
                 <div className="pl-3">
-                  <h1 className="font-sans font-semibold">ChiChi</h1>
-                  <h1 className="font-sans font-light">South Africa</h1>
+                  <h1 className="font-sans font-semibold text-white">ChiChi</h1>
+                  <h1 className="font-sans font-light text-gray-100">South Africa</h1>
                 </div>
               </div>
             </div>
             <div className="pt-3">
-              <h1 className="font-serif ">
+              <h1 className="font-serif text-gray-200 ">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
                 consectetur justo quis euismod vehicula. Quisque diam dui,
                 imperdiet et
@@ -53,22 +53,22 @@ const Testimonials = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="pl-10 pb-8 ">
-          <div className="w-[400px] h-48  shadow-lg m-3 p-5 rounded-lg">
+        <div className="">
+          <div className="w-[400px] h-48 shadow-lg m-3 p-5 rounded-lg bg-neutral-800">
             <div>
-              <div className="flex">
+              <div className="flex ">
                 <img
                   className="h-14 rounded-full"
                   src="https://www.mecgale.com/wp-content/uploads/2017/08/dummy-profile.png"
                 />
                 <div className="pl-3">
-                  <h1 className="font-sans font-semibold">ChiChi</h1>
-                  <h1 className="font-sans font-light">South Africa</h1>
+                  <h1 className="font-sans font-semibold text-white">ChiChi</h1>
+                  <h1 className="font-sans font-light text-gray-100">South Africa</h1>
                 </div>
               </div>
             </div>
             <div className="pt-3">
-              <h1 className="font-serif ">
+              <h1 className="font-serif text-gray-200 ">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
                 consectetur justo quis euismod vehicula. Quisque diam dui,
                 imperdiet et
@@ -78,22 +78,22 @@ const Testimonials = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="pl-10 pb-8">
-          <div className="w-[400px] h-48 shadow-lg m-3 p-5 rounded-lg">
+        <div className="">
+          <div className="w-[400px] h-48 shadow-lg m-3 p-5 rounded-lg bg-neutral-800">
             <div>
-              <div className="flex">
+              <div className="flex ">
                 <img
                   className="h-14 rounded-full"
                   src="https://www.mecgale.com/wp-content/uploads/2017/08/dummy-profile.png"
                 />
                 <div className="pl-3">
-                  <h1 className="font-sans font-semibold">ChiChi</h1>
-                  <h1 className="font-sans font-light">South Africa</h1>
+                  <h1 className="font-sans font-semibold text-white">ChiChi</h1>
+                  <h1 className="font-sans font-light text-gray-100">South Africa</h1>
                 </div>
               </div>
             </div>
             <div className="pt-3">
-              <h1 className="font-serif ">
+              <h1 className="font-serif text-gray-200 ">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
                 consectetur justo quis euismod vehicula. Quisque diam dui,
                 imperdiet et
@@ -103,22 +103,22 @@ const Testimonials = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="pl-10 pb-8">
-          <div className="w-[400px] h-48 shadow-lg m-3 p-5 rounded-lg">
+        <div className="">
+          <div className="w-[400px] h-48 shadow-lg m-3 p-5 rounded-lg bg-neutral-800">
             <div>
-              <div className="flex">
+              <div className="flex ">
                 <img
                   className="h-14 rounded-full"
                   src="https://www.mecgale.com/wp-content/uploads/2017/08/dummy-profile.png"
                 />
                 <div className="pl-3">
-                  <h1 className="font-sans font-semibold">ChiChi</h1>
-                  <h1 className="font-sans font-light">South Africa</h1>
+                  <h1 className="font-sans font-semibold text-white">ChiChi</h1>
+                  <h1 className="font-sans font-light text-gray-100">South Africa</h1>
                 </div>
               </div>
             </div>
             <div className="pt-3">
-              <h1 className="font-serif ">
+              <h1 className="font-serif text-gray-200 ">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
                 consectetur justo quis euismod vehicula. Quisque diam dui,
                 imperdiet et
@@ -128,22 +128,22 @@ const Testimonials = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="pl-10 pb-8">
-          <div className="w-[400px] h-48 shadow-lg m-3 p-5 rounded-lg">
+        <div className="">
+          <div className="w-[400px] h-48 shadow-lg m-3 p-5 rounded-lg bg-neutral-800">
             <div>
-              <div className="flex">
+              <div className="flex ">
                 <img
                   className="h-14 rounded-full"
                   src="https://www.mecgale.com/wp-content/uploads/2017/08/dummy-profile.png"
                 />
                 <div className="pl-3">
-                  <h1 className="font-sans font-semibold">ChiChi</h1>
-                  <h1 className="font-sans font-light">South Africa</h1>
+                  <h1 className="font-sans font-semibold text-white">ChiChi</h1>
+                  <h1 className="font-sans font-light text-gray-100">South Africa</h1>
                 </div>
               </div>
             </div>
             <div className="pt-3">
-              <h1 className="font-serif ">
+              <h1 className="font-serif text-gray-200 ">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
                 consectetur justo quis euismod vehicula. Quisque diam dui,
                 imperdiet et
@@ -152,31 +152,7 @@ const Testimonials = () => {
           </div>
         </div>
       </SwiperSlide>
-      <SwiperSlide>
-        <div className="pl-10 pb-8">
-          <div className="w-[400px] h-48 shadow-lg m-3 p-5 rounded-lg">
-            <div>
-              <div className="flex">
-                <img
-                  className="h-14 rounded-full"
-                  src="https://www.mecgale.com/wp-content/uploads/2017/08/dummy-profile.png"
-                />
-                <div className="pl-3">
-                  <h1 className="font-sans font-semibold">ChiChi</h1>
-                  <h1 className="font-sans font-light">South Africa</h1>
-                </div>
-              </div>
-            </div>
-            <div className="pt-3">
-              <h1 className="font-serif ">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-                consectetur justo quis euismod vehicula. Quisque diam dui,
-                imperdiet et
-              </h1>
-            </div>
-          </div>
-        </div>
-      </SwiperSlide>
+      
       
      
     </Swiper>
