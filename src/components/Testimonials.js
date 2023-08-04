@@ -54,7 +54,7 @@ const Testimonials = () => {
       </SwiperSlide>
       <SwiperSlide>
         <div className="pl-10 pb-8 ">
-          <div className="w-[400px] h-48 sm:w-[250px]  shadow-lg m-3 p-5 rounded-lg">
+          <div className="w-[400px] h-48  shadow-lg m-3 p-5 rounded-lg">
             <div>
               <div className="flex">
                 <img
