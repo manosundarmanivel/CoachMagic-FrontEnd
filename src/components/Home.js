@@ -10,21 +10,21 @@ const Home = () => {
       <div className="flex">
       <div className=" p-20  ">
         {/* <Outlet/> */}
-        <h1 className=" font-bold font-sans text-6xl p-8 text-white ">
+        <h1 className=" font-bold font-sans text-7xl p-8 text-black ">
           A Place value your <br />{" "}
           <span className="text-purple-500">Question</span> <br />
           not your <span className="text-green-400"> Identity</span>
         </h1>
         <h1
-          className=" font-semibold font-sans text-2xl p-8 text-white
+          className=" font-semibold font-sans text-2xl p-8 text-black
       "
         >
           Glad to be a part of your dream accomplishment <br /> by connecting
           with
-          <span className="text-yellow-300"> Expertise</span> people
+          <span> Expertise</span> people
         </h1>
         <div className="mx-10 my-10">
-          <button className=" bg-[#407BFE] text-white rounded-full p-3 font-sans font-semibold">
+          <button className=" bg-black text-white rounded-2xl p-4 font-sans text-lg font-semibold">
             Sign Up Free
           </button>
         </div>

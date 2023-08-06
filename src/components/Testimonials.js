@@ -8,8 +8,8 @@ import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 
 const Testimonials = () => {
   return (
-    <div className="px-4 sm:px-6 lg:px-8 bg-[#141414]">
-        <h1 className='text-3xl font-sans font-semibold text-center pb-20 text-white'>Here are our users <br/> Testimonials</h1>
+    <div className="px-4 sm:px-6 lg:px-8  bg-[#FFFFFF]">
+        <h1 className='text-3xl  font-bold text-center pb-20 text-black mt-10 pt-10'>Here are our users <br/> Testimonials</h1>
         <Swiper
       modules={[Navigation, Pagination, Scrollbar, A11y]}
       spaceBetween={0}

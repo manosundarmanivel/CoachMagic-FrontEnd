@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import {Outlet, RouterProvider, createBrowserRouter} from 'react-router-dom'
 import Signin from "./components/Signin";
 import SignUp from "./components/SignUp";
+import Verification from "./components/Verification";
 
 const appRouter = createBrowserRouter([{
   path:"/",
@@ -14,11 +15,16 @@ const appRouter = createBrowserRouter([{
 {
   path:"/signup",
   element:<SignUp/>
-}])
+},
+{
+  path:"/email",
+  element:<Verification/>
+}
+])
 
 function App() {
   return (
-    <div className="bg-[#141414]">
+    <div className="bg-[#F8F7F1]">
     <Header/>
     <Outlet/>
     <RouterProvider router={appRouter}/>

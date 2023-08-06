@@ -5,7 +5,7 @@ const Footer = () => {
     <div className=" mt-20 h-100 w-full bg-[#141414] ">
       <div className="p-20 flex grid grid-cols-2">
       <div>
-        <img className="h-24" src={Logo} />
+      <h1 className=' text-white font-bold font-sans text-6xl'>Coach <span className='text-[#0094FE] '>Magic</span></h1>
       </div>
       <div>
         <div className="flex ">
