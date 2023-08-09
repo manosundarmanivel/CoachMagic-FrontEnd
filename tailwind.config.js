@@ -2,7 +2,21 @@
 module.exports = {
   content: [ "./src/**/*.js"],
   theme: {
-    extend: {},
+    fontSize: {
+      title: `2.6rem;`,
+      paragraph: `1.2rem;`
+    },
+    extend: {
+      colors: {
+        primary: {
+          500: '#FF6363;',
+          800: '#FF1313;',
+        }
+      },
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }

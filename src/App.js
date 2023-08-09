@@ -29,7 +29,7 @@ const appRouter = createBrowserRouter([{
 
 function App() {
   return (
-    <div className="bg-[#F8F7F1]">
+    <div className="">
     
     <Outlet/>
     <RouterProvider router={appRouter}/>
