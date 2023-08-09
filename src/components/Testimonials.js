@@ -10,7 +10,7 @@ const Testimonials = () => {
   return (
     <div className="px-4 sm:px-6 lg:px-8  bg-[#FFFFFF]">
         <h1 className='text-3xl  font-bold text-center pb-20 text-black mt-10 pt-10'>Here are our users <br/> Testimonials</h1>
-        <Swiper
+        <Swiper 
       modules={[Navigation, Pagination, Scrollbar, A11y]}
       spaceBetween={0}
       slidesPerView={1} 
@@ -27,8 +27,8 @@ const Testimonials = () => {
       onSlideChange={() => console.log('slide change')}
       
     >
-      <SwiperSlide>
-        <div className="">
+      <SwiperSlide className="flex justify-center">
+        <div className="justify-items-center">
           <div className="w-[400px] h-48 shadow-lg m-3 p-5 rounded-lg bg-neutral-800">
             <div>
               <div className="flex ">

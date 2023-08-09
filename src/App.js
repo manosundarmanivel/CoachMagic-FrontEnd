@@ -5,6 +5,7 @@ import {Outlet, RouterProvider, createBrowserRouter} from 'react-router-dom'
 import Signin from "./components/Signin";
 import SignUp from "./components/SignUp";
 import Verification from "./components/Verification";
+import Dashboard from "./components/Dashboard";
 
 const appRouter = createBrowserRouter([{
   path:"/",
@@ -19,13 +20,17 @@ const appRouter = createBrowserRouter([{
 {
   path:"/email",
   element:<Verification/>
+},
+{
+  path:"/dashboard",
+  element:<Dashboard/>
 }
 ])
 
 function App() {
   return (
     <div className="bg-[#F8F7F1]">
-    <Header/>
+    
     <Outlet/>
     <RouterProvider router={appRouter}/>
     </div>

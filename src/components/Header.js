@@ -12,7 +12,7 @@ const Header = () => {
         toggleFun(oldval=>!oldval)
     }
   return (
-    <nav className='nav-container shadow-md flex justify-between items-center'>
+    <nav className='nav-container shadow-md flex justify-around items-center '>
     {/* <img src={Logo} className='w-[160px] logo text-white lg:ml-10 mr-10 ml-2'></img> */}
     <h1 className='logo text-black lg:ml-10 mr-10 ml-2 font-bold font-sans text-3xl'>Coach <span className='text-[#0094FE] '>Magic</span></h1>
     <ul className={ toggle?"navbar":'navbar nav-open'}>
