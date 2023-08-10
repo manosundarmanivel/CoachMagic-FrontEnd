@@ -6,11 +6,14 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import EditRoundedIcon from "@mui/icons-material/EditRounded";
 import ClearRoundedIcon from "@mui/icons-material/ClearRounded";
+import Sidebar from "./Sidebar";
 
 const Dashboard = () => {
   return (
-    <div className="flex flex-wrap font-poppins">
-      <div className="flex bg-[#F1ECFF] m-10 p-10 rounded-3xl w-[950px] ">
+    <div className="flex">
+      <Sidebar/>
+      <div className="flex flex-wrap font-poppins">
+      <div className="flex bg-[#F1ECFF] m-10 p-10 rounded-3xl w-[780px] ">
         <div>
           <div className="flex ">
             <div className="">
@@ -181,13 +184,14 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
-      <div className=" mt-10 mb-10 p-10 bg-[#def2fa] rounded-2xl ">
+      <div className=" mt-10 mb-10 p-5 bg-[#def2fa] rounded-2xl ">
         <div className="flex justify-between">
-          <h1 className="text-[28px] font-semibold">Calender</h1>
+          <h1 className="text-[28px] font-semibold">Calendar</h1>
           <MoreHorizIcon />
         </div>
         <BasicDateCalendar />
       </div>
+    </div>
     </div>
   );
 };

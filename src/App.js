@@ -6,6 +6,7 @@ import Signin from "./components/Signin";
 import SignUp from "./components/SignUp";
 import Verification from "./components/Verification";
 import Dashboard from "./components/Dashboard";
+import Sidebar from "./components/Sidebar";
 
 const appRouter = createBrowserRouter([{
   path:"/",
@@ -24,6 +25,10 @@ const appRouter = createBrowserRouter([{
 {
   path:"/dashboard",
   element:<Dashboard/>
+},
+{
+  path:'/side',
+  element:<Sidebar/>
 }
 ])
 
