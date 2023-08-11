@@ -1,6 +1,7 @@
 import React from 'react'
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import DashHead from './DashHead';
+import OTPInput, { ResendOTP } from "otp-input-react"
 
 const Sidebar = () => {
    
