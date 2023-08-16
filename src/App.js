@@ -8,6 +8,7 @@ import Verification from "./components/Verification";
 import Dashboard from "./components/Dashboard";
 import Sidebar from "./components/Sidebar";
 import OtpVerification from "./components/OtpVerification";
+import Profile from "./components/Profile";
 
 const appRouter = createBrowserRouter([{
   path:"/",
@@ -34,6 +35,10 @@ const appRouter = createBrowserRouter([{
 {
   path:'/otp',
   element:<OtpVerification/>
+},
+{
+  path:'/profile',
+  element:<Profile/>
 }
 ])
 
