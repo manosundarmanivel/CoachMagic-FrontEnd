@@ -61,6 +61,11 @@ export default function LabTabs() {
                     <div></div>
                 </div>
 
+                <div className='flex p-2 pt-4'>
+                    <button className='text-white bg-black p-3 text-[14px] rounded-md'>Update Profile</button>
+                    <button className='text-[14px] p-3 pl-8'> Reset</button>
+                </div>
+
             </div>
         </TabPanel>
         <TabPanel value="2">Item Two</TabPanel>
