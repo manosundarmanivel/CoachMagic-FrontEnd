@@ -63,7 +63,7 @@ const Dashboard = () => {
               <div className="flex justify-between m-3 items-center">
                 <div>
                   <div className="flex ">
-                    <img
+                    <img alt=""
                       className="h-12 rounded-lg"
                       src="https://i0.wp.com/newdoorfiji.com/wp-content/uploads/2018/03/profile-img-1.jpg?ssl=1"
                     />
@@ -93,6 +93,7 @@ const Dashboard = () => {
                 <div>
                   <div className="flex ">
                     <img
+                    alt=""
                       className="h-12 rounded-lg"
                       src="https://i0.wp.com/newdoorfiji.com/wp-content/uploads/2018/03/profile-img-1.jpg?ssl=1"
                     />
@@ -121,7 +122,8 @@ const Dashboard = () => {
               <div className="flex justify-between m-3 items-center">
                 <div>
                   <div className="flex ">
-                    <img
+                    <img 
+                    alt=""
                       className="h-12 rounded-lg"
                       src="https://i0.wp.com/newdoorfiji.com/wp-content/uploads/2018/03/profile-img-1.jpg?ssl=1"
                     />
@@ -150,7 +152,8 @@ const Dashboard = () => {
               <div className="flex justify-between m-3 items-center">
                 <div>
                   <div className="flex ">
-                    <img
+                    <img 
+                    alt=""
                       className="h-12 rounded-lg"
                       src="https://i0.wp.com/newdoorfiji.com/wp-content/uploads/2018/03/profile-img-1.jpg?ssl=1"
                     />
