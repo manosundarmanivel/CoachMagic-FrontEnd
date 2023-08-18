@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 import LabTabs from './Tabs';
 const Settings = () => {
-    const [tabIndex, setTabIndex] = useState(0);
+   
     
   return (
     <div className='flex font-poppins'>

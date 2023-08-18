@@ -4,7 +4,7 @@ import Tab from "@mui/material/Tab";
 import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
-import { Dropdown } from "primereact/dropdown";
+
 
 import { InputText } from "primereact/inputtext";
 import { Divider } from "@mui/material";
@@ -33,6 +33,7 @@ export default function LabTabs() {
           <div>
             <h1 className="text-[#4C535F]">Your Profile Picture</h1>
             <img
+             alt="img"
               className=" m-2 h-[100px] w-[100px] rounded-full object-cover"
               src={image}
             />

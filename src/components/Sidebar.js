@@ -10,15 +10,15 @@ import AssessmentIcon from '@mui/icons-material/Assessment';
 import PaymentIcon from '@mui/icons-material/Payment';
 
 const Sidebar = () => {
-  const DashboardList = [
-    { name: "Dashboard", icon: <DashboardIcon /> },
-    { name: "Profile", icon: <DashboardIcon /> },
-    { name: "Invitations", icon: <DashboardIcon /> },
-    { name: "Reviews", icon: <DashboardIcon /> },
-    { name: "Analytics", icon: <DashboardIcon /> },
-    { name: "Payment", icon: <DashboardIcon /> },
-    { name: "Transactions", icon: <DashboardIcon /> },
-  ];
+//   const DashboardList = [
+//     { name: "Dashboard", icon: <DashboardIcon /> },
+//     { name: "Profile", icon: <DashboardIcon /> },
+//     { name: "Invitations", icon: <DashboardIcon /> },
+//     { name: "Reviews", icon: <DashboardIcon /> },
+//     { name: "Analytics", icon: <DashboardIcon /> },
+//     { name: "Payment", icon: <DashboardIcon /> },
+//     { name: "Transactions", icon: <DashboardIcon /> },
+//   ];
 
   return (
     <div className="w-[230px] font-poppins p-7 m-3 ">
