@@ -4,6 +4,8 @@ import Testimonials from "./Testimonials";
 import Footer from "./Footer";
 import HomeImg from "../img/Accept request-bro.svg";
 
+import { Link } from "react-router-dom";
+
 const Home = () => {
   return (
     <div>
@@ -24,9 +26,11 @@ const Home = () => {
           <span> Expertise</span> people
         </h1>
         <div className="mx-10 my-10">
-          <button className=" bg-black text-white rounded-2xl p-4 font-sans text-lg font-semibold">
+          
+
+         <Link to='/dashboard' ><button className=" bg-black text-white rounded-2xl p-4 font-sans text-lg font-semibold">
             Sign Up Free
-          </button>
+          </button></Link>
         </div>
       </div>
       <div>

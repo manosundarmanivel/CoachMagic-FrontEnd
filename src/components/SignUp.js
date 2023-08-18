@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from '../img/logo.jpg'
+import { Link } from 'react-router-dom'
 
 const Signup = () => {
   return (
@@ -11,7 +12,7 @@ const Signup = () => {
             <img className='w-24 md:w-20 lg:w-36 xl:w-37 ' src={Logo}/>
             </div>
             <br />
-                <h3 className='text-[white]'>Signup</h3>
+                 <h3 className='text-[white]'>Signup</h3> 
                 <p className='text-[white]'>Just some details to get you in!</p>
                 <div className="input flex flex-col">
                     <label for="">
