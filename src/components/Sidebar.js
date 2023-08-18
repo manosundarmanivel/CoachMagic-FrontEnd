@@ -4,6 +4,10 @@ import DashHead from "./DashHead";
 import OTPInput, { ResendOTP } from "otp-input-react";
 import { Link } from "react-router-dom";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import SettingsIcon from '@mui/icons-material/Settings';
+import HomeIcon from '@mui/icons-material/Home';
+import AssessmentIcon from '@mui/icons-material/Assessment';
+import PaymentIcon from '@mui/icons-material/Payment';
 
 const Sidebar = () => {
   const DashboardList = [
@@ -20,20 +24,44 @@ const Sidebar = () => {
     <div className="w-[250px] font-poppins p-7 m-3">
       <DashHead />
       <div className="pt-5">
-        <Link to='/dashboard' >
+        <Link to='/' >
         <div className="flex pt-4 pb-4 items-center hover:text-[#0094FE]">
           <div>
-            <DashboardIcon />
+            <HomeIcon/>
           </div>
           <h1 className="pl-3 text-[20px]">Dashboard</h1>
         </div>
         </Link>
-        <Link to='/profile' >
+        <Link to='/invitations' >
         <div className="flex pt-4 pb-4 items-center hover:text-[#0094FE]">
           <div>
-            <AccountCircleIcon />
+            <DashboardIcon />
           </div>
-          <h1 className="pl-3 text-[20px]">Profile</h1>
+          <h1 className="pl-3 text-[20px]">Invitations</h1>
+        </div>
+        </Link>
+        <Link to='/activity' >
+        <div className="flex pt-4 pb-4 items-center hover:text-[#0094FE]">
+          <div>
+            <AssessmentIcon/>
+          </div>
+          <h1 className="pl-3 text-[20px]">Your Activity</h1>
+        </div>
+        </Link>
+        <Link to='/payments' >
+        <div className="flex pt-4 pb-4 items-center hover:text-[#0094FE]">
+          <div>
+            <PaymentIcon />
+          </div>
+          <h1 className="pl-3 text-[20px]">Payments</h1>
+        </div>
+        </Link>
+        <Link to='/settings' >
+        <div className="flex pt-4 pb-4 items-center hover:text-[#0094FE]">
+          <div>
+            <SettingsIcon />
+          </div>
+          <h1 className="pl-3 text-[20px]">Settings</h1>
         </div>
         </Link>
       </div>

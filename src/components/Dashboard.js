@@ -11,7 +11,7 @@ import Sidebar from "./Sidebar";
 const Dashboard = () => {
   return (
     <div className="flex">
-      <Sidebar/>
+      
       <div className="flex flex-wrap font-poppins">
       <div className="flex bg-[#F1ECFF] m-10 p-10 rounded-3xl w-[780px] ">
         <div>
