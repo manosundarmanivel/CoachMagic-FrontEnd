@@ -1,9 +1,9 @@
 import React from "react";
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import DashHead from "./DashHead";
-import OTPInput, { ResendOTP } from "otp-input-react";
+
 import { Link } from "react-router-dom";
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+
 import SettingsIcon from '@mui/icons-material/Settings';
 import HomeIcon from '@mui/icons-material/Home';
 import AssessmentIcon from '@mui/icons-material/Assessment';
@@ -21,7 +21,7 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className="w-[250px] font-poppins p-7 m-3">
+    <div className="w-[230px] font-poppins p-7 m-3 ">
       <DashHead />
       <div className="pt-5">
         <Link to='/' >
@@ -29,7 +29,7 @@ const Sidebar = () => {
           <div>
             <HomeIcon/>
           </div>
-          <h1 className="pl-3 text-[20px]">Dashboard</h1>
+          <h1 className="pl-3 text-[18px]">Dashboard</h1>
         </div>
         </Link>
         <Link to='/invitations' >
@@ -37,7 +37,7 @@ const Sidebar = () => {
           <div>
             <DashboardIcon />
           </div>
-          <h1 className="pl-3 text-[20px]">Invitations</h1>
+          <h1 className="pl-3 text-[18px]">Invitations</h1>
         </div>
         </Link>
         <Link to='/activity' >
@@ -45,7 +45,7 @@ const Sidebar = () => {
           <div>
             <AssessmentIcon/>
           </div>
-          <h1 className="pl-3 text-[20px]">Your Activity</h1>
+          <h1 className="pl-3 text-[18px]">Your Activity</h1>
         </div>
         </Link>
         <Link to='/payments' >
@@ -53,7 +53,7 @@ const Sidebar = () => {
           <div>
             <PaymentIcon />
           </div>
-          <h1 className="pl-3 text-[20px]">Payments</h1>
+          <h1 className="pl-3 text-[18px]">Payments</h1>
         </div>
         </Link>
         <Link to='/settings' >
@@ -61,7 +61,7 @@ const Sidebar = () => {
           <div>
             <SettingsIcon />
           </div>
-          <h1 className="pl-3 text-[20px]">Settings</h1>
+          <h1 className="pl-3 text-[18px]">Settings</h1>
         </div>
         </Link>
       </div>

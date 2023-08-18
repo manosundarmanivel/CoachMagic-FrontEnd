@@ -1,23 +1,23 @@
 import React from "react";
-import DateCalendarValue from "./Calender";
+
 import BasicDateCalendar from "./Calender";
 import { Divider, Pagination } from "@mui/material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import EditRoundedIcon from "@mui/icons-material/EditRounded";
 import ClearRoundedIcon from "@mui/icons-material/ClearRounded";
-import Sidebar from "./Sidebar";
+
 
 const Dashboard = () => {
   return (
     <div className="flex">
       
-      <div className="flex flex-wrap font-poppins">
-      <div className="flex bg-[#F1ECFF] m-10 p-10 rounded-3xl w-[780px] ">
+      <div className="flex flex-wrap font-poppins w-max">
+      <div className="flex bg-[#F1ECFF] mt-10 p-10 rounded-3xl w-max ">
         <div>
           <div className="flex ">
             <div className="">
-              <h1 className="text-[32px] font-bold">Dashboard</h1>
+              <h1 className="text-[28px] font-bold">Dashboard</h1>
               <h3 className="text-[#958C8C] pt-2 pb-2 ">
                 Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem
                 ipsum dolor sit amet
@@ -25,7 +25,7 @@ const Dashboard = () => {
             </div>
             <div>{/* icon */}</div>
           </div>
-          <div className="flex flex-wrap bg-white p-3 mt-5 w-[700px] rounded-2xl justify-around ">
+          <div className="flex flex-wrap bg-white p-3 mt-5 mx-auto rounded-2xl justify-around ">
             <div className="m-5 ">
               <h1 className="text-[16px] text-[#958C8C]">Total Earnings</h1>
               <h2 className="text-[32px] pt-2 pb-2">$52,258.32</h2>
@@ -184,9 +184,9 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
-      <div className=" mt-10 mb-10 p-5 bg-[#def2fa] rounded-2xl ">
+      <div className=" mt-10 mb-10 p-5 ml-2 bg-[#def2fa] rounded-2xl ">
         <div className="flex justify-between">
-          <h1 className="text-[28px] font-semibold">Calendar</h1>
+          <h1 className="text-[28px] mt-5 font-semibold">Calendar</h1>
           <MoreHorizIcon />
         </div>
         <BasicDateCalendar />

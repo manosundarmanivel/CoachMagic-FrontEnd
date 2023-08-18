@@ -1,5 +1,5 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
+
 import Testimonials from "./Testimonials";
 import Footer from "./Footer";
 import HomeImg from "../img/Accept request-bro.svg";

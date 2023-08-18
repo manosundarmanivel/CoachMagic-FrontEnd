@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../img/logo.jpg";
+
 const Footer = () => {
   return (
     <div className=" mt-20 h-100 w-full bg-[#141414] ">

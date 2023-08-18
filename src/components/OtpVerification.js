@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import OTPInput, { ResendOTP } from "otp-input-react";
 import OtpImg from '../img/OTP 1.png'
-import { blueGrey } from "@mui/material/colors";
+
 const OtpVerification = () => {
   const [OTP, setOTP] = useState(0);
   return (
