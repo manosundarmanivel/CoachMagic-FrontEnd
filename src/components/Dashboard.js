@@ -10,10 +10,10 @@ import ClearRoundedIcon from "@mui/icons-material/ClearRounded";
 
 const Dashboard = () => {
   return (
-    <div className="flex">
+    <div className="flex ">
       
-      <div className="flex flex-wrap font-poppins w-max">
-      <div className="flex bg-[#F1ECFF] mt-10 p-10 rounded-3xl w-max ">
+      <div className="flex flex-wrap font-poppins w-max ">
+      <div className="flex  bg-[#F1ECFF] mt-10 p-10 rounded-3xl w-max ">
         <div>
           <div className="flex ">
             <div className="">
@@ -184,7 +184,7 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
-      <div className=" mt-10 mb-10 p-5 ml-2 bg-[#def2fa] rounded-2xl ">
+      <div className=" mt-10 mb-10 p-5 ml-8 h-3/5 bg-[#def2fa] rounded-2xl ">
         <div className="flex justify-between">
           <h1 className="text-[28px] mt-5 font-semibold">Calendar</h1>
           <MoreHorizIcon />
