@@ -1,13 +1,14 @@
 import React from "react";
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import DashHead from "./DashHead";
-
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import { Link } from "react-router-dom";
-
+import Proflie from "../img/Avatar Image.svg";
 import SettingsIcon from '@mui/icons-material/Settings';
 import HomeIcon from '@mui/icons-material/Home';
 import AssessmentIcon from '@mui/icons-material/Assessment';
 import PaymentIcon from '@mui/icons-material/Payment';
+import LogoutIcon from '@mui/icons-material/Logout';
 
 const Sidebar = () => {
 //   const DashboardList = [
@@ -21,7 +22,7 @@ const Sidebar = () => {
 //   ];
 
   return (
-    <div className="w-[230px] font-poppins p-7 m-3 ">
+    <div className="w-[270px] font-poppins p-7 m-3  ">
       <DashHead />
       <div className="pt-5">
         <Link to='/' >
@@ -64,7 +65,23 @@ const Sidebar = () => {
           <h1 className="pl-3 text-[18px]">Settings</h1>
         </div>
         </Link>
+
+        
       </div>
+      <Link to='/settings'>
+        <div className="flex items-center mt-80" >
+            <img alt="img"  src={Proflie} />
+            <div className="p-2">
+              <h1 className="text-[16px] font-semibold">Mano Sundar M</h1>
+              <h1 className="text-[12px]">manosundar@gmail.com</h1>
+            </div>
+            
+            <div className="flex items-center">
+            <LogoutIcon/>
+            <ArrowDropDownIcon/>
+            </div>
+        </div>
+        </Link>
     </div>
   );
 };

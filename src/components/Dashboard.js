@@ -6,19 +6,28 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import EditRoundedIcon from "@mui/icons-material/EditRounded";
 import ClearRoundedIcon from "@mui/icons-material/ClearRounded";
+import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
+import { Link } from "react-router-dom";
 
 
 const Dashboard = () => {
   return (
-    <div className="flex ">
+    <div className="flex pl-10">
       
-      <div className="flex flex-wrap font-poppins w-max ">
+      <div className="flex flex-wrap font-poppins  ">
       <div className="flex  bg-[#F1ECFF] mt-10 p-10 rounded-3xl w-max ">
         <div>
           <div className="flex ">
             <div className="">
+              <div className="flex items-center ">
               <h1 className="text-[28px] font-bold">Dashboard</h1>
-              <h3 className="text-[#958C8C] pt-2 pb-2 ">
+             <Link to='/notification' >
+             <div className="ml-[500px] bg-white p-3 rounded-xl shadow-lg">
+              <NotificationsNoneIcon/>
+              </div>
+             </Link>
+              </div>
+              <h3 className="text-[#958C8C] pt-3  pb-2 ">
                 Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem
                 ipsum dolor sit amet
               </h3>

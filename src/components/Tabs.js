@@ -4,8 +4,7 @@ import Tab from "@mui/material/Tab";
 import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
-
-
+import Profile from "../img/Avatar Image.svg"
 import { InputText } from "primereact/inputtext";
 import { Divider } from "@mui/material";
 
@@ -16,7 +15,7 @@ export default function LabTabs() {
     setValue(newValue);
   };
 
-  const [image, setImage] = React.useState("");
+  const [image, setImage] = React.useState(Profile);
   console.log(image);
 
   return (
