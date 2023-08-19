@@ -121,7 +121,16 @@ export default function LabTabs() {
             </div>
           </div>
         </TabPanel>
-        <TabPanel value="2">Item Two</TabPanel>
+        <TabPanel value="2">
+          <div>
+            <h1>Time Zone</h1>
+          <input
+                  className="bg-[#FAFBFC] border border-gray-400 rounded-lg p-2 w-[400px]"
+                  placeholder="Link to Social Account"
+                />
+             
+          </div>
+        </TabPanel>
         <TabPanel value="3">Item Three</TabPanel>
       </TabContext>
     </Box>
