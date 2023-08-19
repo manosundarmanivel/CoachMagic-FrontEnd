@@ -84,7 +84,33 @@ export default function LabTabs() {
                   className="bg-[#FAFBFC] border border-gray-400 rounded-lg p-2 w-[400px]"
                   placeholder="Please enter the Email"
                 />
+              <h1 className="font-[16px] pb-2 pt-2">Phone</h1>
+                <input
+                  className="bg-[#FAFBFC] border border-gray-400 rounded-lg p-2 w-[400px]"
+                  placeholder="Please enter your phone number"
+                />
+              <h1 className="font-[16px] pb-2 pt-2">Know about me</h1>
+                <input
+                  className="bg-[#FAFBFC] border border-gray-400 rounded-lg p-2 w-[400px]"
+                  placeholder="Link to Social Account"
+                />
+              <h1 className="font-[16px] pb-2 pt-2">Slogan</h1>
+              <select
+                  className="bg-[#FAFBFC] border border-gray-400 rounded-lg p-2 w-[400px]"
+                  placeholder="Select your prefered tag"
+                  id="cars"
+                  name="cars"
+                >
+                  <option className="text-[#FAFBFC]" value="">
+                    Select your option
+                  </option>
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="fiat">Fiat</option>
+                  <option value="audi">Audi</option>
+                </select>
               </div>
+              
             </div>
 
             <div className="flex p-2 pt-4">
