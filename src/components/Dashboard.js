@@ -196,7 +196,7 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
-      <div className=" mt-10 mb-10 p-5 ml-8 h-3/5 bg-[#def2fa] rounded-2xl ">
+      <div className=" mt-10 mb-10 p-5 ml-3 h-3/5 bg-[#def2fa] rounded-2xl ">
         <div className="flex justify-between">
           <h1 className="text-[28px] mt-5 font-semibold">Calendar</h1>
           <MoreHorizIcon />
