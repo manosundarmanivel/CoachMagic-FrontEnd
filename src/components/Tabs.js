@@ -18,6 +18,16 @@ export default function LabTabs() {
   const [image, setImage] = React.useState(Profile);
   console.log(image);
 
+  const [skills, setSkills] = React.useState([]);
+  const [newSkill, setNewSkill] = React.useState('');
+
+  const addSkill = () => {
+    if (newSkill.trim() !== '') {
+      setSkills([...skills, newSkill]);
+      setNewSkill('');
+    }
+  };
+
   return (
     <Box sx={{ width: "100%", typography: "body1", fontFamily: "poppins" }}>
       <TabContext value={value}>
@@ -131,7 +141,36 @@ export default function LabTabs() {
              
           </div>
         </TabPanel>
-        <TabPanel value="3">Item Three</TabPanel>
+        
+        <TabPanel value="3">
+
+  
+    <div className="p-4">
+      <h2 className="text-xl font-semibold mb-4">Skills</h2>
+      <ul className="list-disc pl-6">
+        {skills.map((skill, index) => (
+          <li key={index} className="mb-2">{skill}</li>
+        ))}
+      </ul>
+      <div className="mt-4">
+        <input
+          type="text"
+          value={newSkill}
+          onChange={(e) => setNewSkill(e.target.value)}
+          placeholder="Enter a new skill"
+          className="p-2 border rounded mr-2"
+        />
+        <button
+          onClick={addSkill}
+          className="bg-blue-500 text-white px-4 py-2 rounded"
+        >
+          Add Skill
+        </button>
+      </div>
+    </div>
+
+
+        </TabPanel>
       </TabContext>
     </Box>
   );
