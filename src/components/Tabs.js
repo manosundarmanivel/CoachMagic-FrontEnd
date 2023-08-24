@@ -1,4 +1,4 @@
-import * as React from "react";
+import React,{useState} from "react";
 import Box from "@mui/material/Box";
 import Tab from "@mui/material/Tab";
 import TabContext from "@mui/lab/TabContext";
@@ -8,7 +8,122 @@ import Profile from "../img/Avatar Image.svg"
 import { InputText } from "primereact/inputtext";
 import { Divider } from "@mui/material";
 
+
+const timezones = [
+  '(UTC+05:30) Chennai, Kolkata, Mumbai, New Delhi',
+  'America/New_York',
+  'America/Los_Angeles',
+  'Europe/London',
+  // Add more timezones as needed
+];
 export default function LabTabs() {
+  const [selectedTimezone, setSelectedTimezone] = useState(timezones[0]);
+
+  const handleTimezoneChange = (event) => {
+    setSelectedTimezone(event.target.value);
+  };
+
+  const [Mont1, setInput1] = useState('');
+  const [Mont2, setInput2] = useState('');
+  const [Tue1, setInput3] = useState('');
+  const [Tue2, setInput4] = useState('');
+  const [Wed1, setInput5] = useState('');
+  const [Wed2, setInput6] = useState('');
+  const [Thu1, setInput7] = useState('');
+  const [Thu2, setInput8] = useState('');
+  const [Fri1, setInput9] = useState('');
+  const [Fri2, setInput10] = useState('');
+  const [Sat1, setInput11] = useState('');
+  const [Sat2, setInput12] = useState('');
+  const [Sun1, setInput13] = useState('');
+  const [Sun2, setInput14] = useState('');
+
+  const [isChecked, setIsChecked] = useState(false);
+  const [isChecked2, setIsChecked2] = useState(false);
+  const [isChecked3, setIsChecked3] = useState(false);
+  const [isChecked4, setIsChecked4] = useState(false);
+  const [isChecked5, setIsChecked5] = useState(false);
+  const [isChecked6, setIsChecked6] = useState(false);
+  const [isChecked7, setIsChecked7] = useState(false);
+
+
+  const handleCheckboxChange = () => {
+    setIsChecked(!isChecked);
+  };
+  const handleCheckboxChange2 = () => {
+    setIsChecked2(!isChecked2);
+  };
+  const handleCheckboxChange3 = () => {
+    setIsChecked3(!isChecked3);
+  };
+  const handleCheckboxChange4 = () => {
+    setIsChecked4(!isChecked4);
+  };
+  const handleCheckboxChange5 = () => {
+    setIsChecked5(!isChecked5);
+  };
+  const handleCheckboxChange6 = () => {
+    setIsChecked6(!isChecked6);
+  };
+  const handleCheckboxChange7 = () => {
+    setIsChecked7(!isChecked7);
+  };
+
+
+
+  const handleInputChange1 = (e) => {
+    setInput1(e.target.value);
+  };
+  const handleInputChange2 = (e) => {
+    setInput2(e.target.value);
+  };
+
+  const handleInputChange3 = (e) => {
+    setInput3(e.target.value);
+  };
+  const handleInputChange4 = (e) => {
+    setInput4(e.target.value);
+  };
+
+  const handleInputChange5 = (e) => {
+    setInput5(e.target.value);
+  };
+  const handleInputChange6 = (e) => {
+    setInput6(e.target.value);
+  };
+
+  const handleInputChange7 = (e) => {
+    setInput7(e.target.value);
+  };
+  const handleInputChange8 = (e) => {
+    setInput8(e.target.value);
+  };
+
+  const handleInputChange9 = (e) => {
+    setInput9(e.target.value);
+  };
+  const handleInputChange10 = (e) => {
+    setInput10(e.target.value);
+  };
+
+  const handleInputChange11 = (e) => {
+    setInput11(e.target.value);
+  };
+  const handleInputChange12 = (e) => {
+    setInput12(e.target.value);
+  };
+
+  const handleInputChange13 = (e) => {
+    setInput13(e.target.value);
+  };
+  const handleInputChange14 = (e) => {
+    setInput14(e.target.value);
+  };
+
+ 
+  
+
+
   const [value, setValue] = React.useState("1");
 
   const handleChange = (event, newValue) => {
@@ -141,6 +256,292 @@ export default function LabTabs() {
              
           </div>
         </TabPanel>
+<<<<<<< main
+        <TabPanel value="3">
+        <div>
+        <div className="max-w-sm py-4">
+      <label htmlFor="timezone" className="block font-medium mb-4">
+        Select Timezone:
+      </label>
+      <select
+        id="timezone"
+        className="block w-full h-10 text-lg p-1 border border-gray-300 rounded focus:outline-none focus:ring focus:border-blue-600"
+        value={selectedTimezone}
+        onChange={handleTimezoneChange}
+      >
+        {timezones.map((timezone) => (
+          <option key={timezone} value={timezone}>
+            {timezone}
+          </option>
+        ))}
+      </select>
+      <p>____________________________________________________</p>
+    </div>
+
+    <div classname="ml-3">
+    <p className="font-semibold py-3">available timining in day</p>
+    <label className="flex items-center space-x-2 py-2">
+        <input
+          type="checkbox"
+          checked={isChecked}
+          onChange={handleCheckboxChange}
+          className="form-checkbox"
+        />
+        <span>Monday</span>
+      </label>
+      {isChecked && (
+        <div className="p-2 border-gray-300 rounded grid gap-20 grid-cols-2">
+          <div>
+            {/* <label className="block mb-1 font-semibold">Input 1</label> */}
+            <input
+              type="text"
+              placeholder="From"
+              value={Mont1}
+              onChange={handleInputChange1}
+              className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
+            />
+          </div>
+          <div>
+            {/* <label className="block mb-1 font-semibold">Input 2</label> */}
+            <input
+              type="text"
+              value={Mont2}
+              placeholder="To"
+              onChange={handleInputChange2}
+              className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
+            />
+          </div>
+        </div>
+      )}
+      <label className="flex items-center space-x-2 py-2">
+        <input
+          type="checkbox"
+          checked={isChecked2}
+          onChange={handleCheckboxChange2}
+          className="form-checkbox"
+        />
+        <span>Tuesday</span>
+      </label>
+      {isChecked2 && (
+        <div className="p-2border-gray-300 rounded grid gap-20 grid-cols-2">
+          <div>
+            {/* <label className="block mb-1 font-semibold">Input 1</label> */}
+            <input
+              placeholder="From"
+              type="text"
+              value={Tue1}
+              onChange={handleInputChange3}
+              className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
+            />
+          </div>
+          <div>
+            {/* <label className="block mb-1 font-semibold">Input 2</label> */}
+            <input
+              type="text"
+              value={Tue2}
+              placeholder="To"
+              onChange={handleInputChange4}
+              className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
+            />
+          </div>
+        </div>
+      )}
+      <label className="flex items-center space-x-2 py-2">
+        <input
+          type="checkbox"
+          checked={isChecked3}
+          onChange={handleCheckboxChange3}
+          className="form-checkbox"
+        />
+        <span>Wednesday</span>
+      </label>
+      {isChecked3 && (
+        <div className="p-2 border-gray-300 rounded grid gap-20 grid-cols-2">
+          <div>
+            {/* <label className="block mb-1 font-semibold">Input 1</label> */}
+            <input
+              type="text"
+              placeholder="From"
+              value={Wed1}
+              onChange={handleInputChange5}
+              className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
+            />
+          </div>
+          <div>
+            {/* <label className="block mb-1 font-semibold">Input 2</label> */}
+            <input
+              type="text"
+              value={Wed2}
+              placeholder="To"
+              onChange={handleInputChange6}
+              className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
+            />
+          </div>
+        </div>
+      )}
+      <label className="flex items-center space-x-2 py-2">
+        <input
+          type="checkbox"
+          checked={isChecked4}
+          onChange={handleCheckboxChange4}
+          className="form-checkbox"
+        />
+        <span>Thursday</span>
+      </label>
+      {isChecked4 && (
+        <div className="p-2 border-gray-300 rounded grid gap-20 grid-cols-2">
+          <div>
+            {/* <label className="block mb-1 font-semibold">Input 1</label> */}
+            <input
+              type="text"
+              placeholder="From"
+              value={Thu1}
+              onChange={handleInputChange7}
+              className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
+            />
+          </div>
+          <div>
+            {/* <label className="block mb-1 font-semibold">Input 2</label> */}
+            <input
+              type="text"
+              value={Thu2}
+              placeholder="To"
+              onChange={handleInputChange8}
+              className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
+            />
+          </div>
+        </div>
+      )}
+      <label className="flex items-center space-x-2 py-2 py-2">
+        <input
+          type="checkbox"
+          checked={isChecked5}
+          onChange={handleCheckboxChange5}
+          className="form-checkbox"
+        />
+        <span>Friday</span>
+      </label>
+      {isChecked5 && (
+        <div className="p-2 border-gray-300 rounded grid gap-20 grid-cols-2">
+          <div>
+            {/* <label className="block mb-1 font-semibold">Input 1</label> */}
+            <input
+              type="text"
+              placeholder="From"
+              value={Fri1}
+              onChange={handleInputChange9}
+              className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
+            />
+          </div>
+          <div>
+            {/* <label className="block mb-1 font-semibold">Input 2</label> */}
+            <input
+              type="text"
+              value={Fri2}
+              placeholder="To"
+              onChange={handleInputChange10}
+              className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
+            />
+          </div>
+        </div>
+      )}
+      <label className="flex items-center space-x-2 py-2 py-2">
+        <input
+          type="checkbox"
+          checked={isChecked6}
+          onChange={handleCheckboxChange6}
+          className="form-checkbox"
+        />
+        <span>Saturday</span>
+      </label>
+      {isChecked6 && (
+        <div className="p-2 border-gray-300 rounded grid gap-20 grid-cols-2">
+          <div>
+            {/* <label className="block mb-1 font-semibold">Input 1</label> */}
+            <input
+              type="text"
+              placeholder="From"
+              value={Sat1}
+              onChange={handleInputChange11}
+              className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
+            />
+          </div>
+          <div>
+            {/* <label className="block mb-1 font-semibold">Input 2</label> */}
+            <input
+              type="text"
+              value={Sat2}
+              placeholder="To"
+              onChange={handleInputChange12}
+              className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
+            />
+          </div>
+        </div>
+      )}
+      <label className="flex items-center space-x-2 py-2">
+        <input
+          type="checkbox"
+          checked={isChecked7}
+          onChange={handleCheckboxChange7}
+          className="form-checkbox"
+        />
+        <span>Sunday</span>
+      </label>
+      {isChecked7 && (
+        <div className="p-2 border-gray-300 rounded grid gap-20 grid-cols-2">
+          <div>
+            {/* <label className="block mb-1 font-semibold">Input 1</label> */}
+            <input
+              type="text"
+              placeholder="From"
+              value={Sun1}
+              onChange={handleInputChange13}
+              className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
+            />
+          </div>
+          <div>
+            {/* <label className="block mb-1 font-semibold">Input 2</label> */}
+            <input
+              type="text"
+              value={Sun2}
+              placeholder="To"
+              onChange={handleInputChange14}
+              className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
+            />
+          </div>
+          
+        </div>
+      )}
+      <p>____________________________________________________</p>
+      </div>
+      <div className="flex items-center py-4">
+      <p className="font-semibold mr-5">Block the date and time of unavailable </p>
+      <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-1 px-4 rounded flex items-center space-x-2">      
+      <svg
+        className="w-5 h-7"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+        />
+      </svg>
+      <span>Add Schedule</span>
+    </button>
+    </div>
+              <div className="flex p-2 pt-4">
+              <button className="text-white hover:bg-indigo-400 bg-black p-3 text-[14px] rounded-md">
+                Save Changes
+              </button>
+              <button className="text-[15px] p-3 pl-8 hover:text-red-500"> Reset</button>
+            </div>
+    </div>
+=======
         
         <TabPanel value="3">
 
@@ -170,6 +571,7 @@ export default function LabTabs() {
     </div>
 
 
+>>>>>>> main
         </TabPanel>
       </TabContext>
     </Box>
