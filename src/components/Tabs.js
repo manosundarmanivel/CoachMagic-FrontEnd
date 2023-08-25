@@ -162,14 +162,42 @@ export default function LabTabs() {
         />
         <button
           onClick={addSkill}
-          className="bg-blue-500 text-white px-4 py-2 rounded"
-        >
-          Add Skill
+          className="bg-blue-500 text-white px-4 py-2 rounded">Add Skill
         </button>
+        <div className="pb-2 pt-5">
+        <h1 className="font-[16px] pb-2 pt-2">Years of Experience</h1>
+        <select class="py-2 px-2 border border-gray-200 rounded bg-[#FAFBFC]   w-[186px] hover:border-blue-700 hover:border-[3px] cursor-pointer">
+          <option className="text-[#FAFBFC]" value="">Years</option>
+          <option value="0-1">0 - 1 years</option>
+          <option value="2-5">2 - 5 years</option>
+          <option value="more than 5">more than 5 years</option>
+          <option value="more than 10">more than 10 years</option>
+        </select>
+        </div>
+        <div className="flex">
+        <div className="p-2">
+              <h1 className="font-[16px] pb-2 pt-2">Preceeding</h1>
+                <input
+                  className="bg-[#FAFBFC] border border-gray-400 rounded-lg p-2 w-[400px]"
+                  placeholder="School/College/CompanyName"
+                />
+        </div>
+        <div className="p-2">
+                <h1 className="font-[16px] pb-2 pt-2">Existing</h1>
+                <input
+                  className="bg-[#FAFBFC] border border-gray-400 rounded-lg p-2 w-[400px]"
+                  placeholder="School/College/CompanyName"
+                />
+        </div>
       </div>
-    </div>
-
-
+</div>
+  <div className="flex p-2 pt-10">
+    <button className="text-white bg-black p-3 px-7 text-[14px]  rounded-md hover:bg-gray-500">
+                Save changes
+              </button>
+             
+            </div>
+</div>
         </TabPanel>
       </TabContext>
     </Box>
