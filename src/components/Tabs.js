@@ -8,7 +8,7 @@ import Profile from "../img/Avatar Image.svg";
 import { InputText } from "primereact/inputtext";
 import { Divider } from "@mui/material";
 import { Link } from "react-router-dom";
-import { TimePicker } from "@mui/x-date-pickers";
+// import { TimePicker } from "@mui/x-date-pickers";
 import BasicTimePicker from "./TimePicker";
 
 const timezones = [
@@ -473,7 +473,7 @@ export default function LabTabs() {
                   </div>
                 </div>
               )}
-              <label className="flex items-center space-x-2 py-2 py-2">
+              <label className="flex items-center space-x-2  py-2">
                 <input
                   type="checkbox"
                   checked={isChecked5}
@@ -506,7 +506,7 @@ export default function LabTabs() {
                   </div>
                 </div>
               )}
-              <label className="flex items-center space-x-2 py-2 py-2">
+              <label className="flex items-center space-x-2  py-2">
                 <input
                   type="checkbox"
                   checked={isChecked6}
