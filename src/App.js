@@ -8,6 +8,8 @@ import Dashboard from "./components/Dashboard";
 import Settings from "./components/Settings";
 import Main from "./components/Main";
 import OtpVerification from './components/OtpVerification';
+import Signin from './components/Signin';
+import Signup from './components/SignUp';
 
 const appRouter = createBrowserRouter([
   {
@@ -27,6 +29,14 @@ const appRouter = createBrowserRouter([
   {
     path:'/otp',
     element:<OtpVerification/>
+  },
+  {
+    path:'/signin',
+    element:<Signin/>
+  },
+  {
+    path:'/signup',
+    element:<Signup/>
   }
  
 ])

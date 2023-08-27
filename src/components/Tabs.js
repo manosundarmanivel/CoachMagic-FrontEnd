@@ -8,6 +8,8 @@ import Profile from "../img/Avatar Image.svg";
 import { InputText } from "primereact/inputtext";
 import { Divider } from "@mui/material";
 import { Link } from "react-router-dom";
+import { TimePicker } from "@mui/x-date-pickers";
+import BasicTimePicker from "./TimePicker";
 
 const timezones = [
   "(UTC+05:30) Chennai, Kolkata, Mumbai, New Delhi",
@@ -129,11 +131,13 @@ export default function LabTabs() {
 
   const [skills, setSkills] = React.useState([]);
   const [newSkill, setNewSkill] = React.useState("");
+  const [newYoe, setNewYoe] = useState([]);
 
   const addSkill = () => {
     if (newSkill.trim() !== "") {
-      setSkills([...skills, newSkill]);
+      setSkills([...skills, newSkill + " - " + newYoe + " Years"]);
       setNewSkill("");
+      setNewYoe("");
     }
   };
 
@@ -190,10 +194,9 @@ export default function LabTabs() {
                   <option className="text-[#FAFBFC]" value="">
                     Select your option
                   </option>
-                  <option value="volvo">Tag1</option>
-                  <option value="saab">Tag2</option>
-                  <option value="fiat">Tag3</option>
-                  <option value="audi">Tag4</option>
+                  <option value="volvo">Mentor</option>
+                  <option value="saab">Leader</option>
+                  <option value="fiat">Warrior</option>
                 </select>
               </div>
 
@@ -247,13 +250,20 @@ export default function LabTabs() {
                 placeholder="Enter a new skill"
                 className="p-2 border rounded mr-2"
               />
+              <input
+                type="text"
+                value={newYoe}
+                onChange={(e) => setNewYoe(e.target.value)}
+                placeholder="Years of Experience"
+                className="p-2 border rounded mr-2"
+              />
               <button
                 onClick={addSkill}
                 className="bg-blue-500 text-white px-4 py-2 rounded"
               >
                 Add Skill
               </button>
-              <div className="pb-2 pt-5">
+              {/* <div className="pb-2 pt-5">
                 <h1 className="font-[16px] pb-2 pt-2">Years of Experience</h1>
                 <select class="py-2 px-2 border border-gray-200 rounded bg-[#FAFBFC]   w-[186px] hover:border-blue-700 hover:border-[3px] cursor-pointer">
                   <option className="text-[#FAFBFC]" value="">
@@ -264,7 +274,7 @@ export default function LabTabs() {
                   <option value="more than 5">more than 5 years</option>
                   <option value="more than 10">more than 10 years</option>
                 </select>
-              </div>
+              </div> */}
               <div className="flex">
                 <div className="p-2">
                   <h1 className="font-[16px] pb-2 pt-2">Preceeding</h1>
@@ -324,62 +334,44 @@ export default function LabTabs() {
               </label>
               {isChecked && (
                 <div>
-                  <div className="p-2 border-gray-300 rounded grid gap-5 grid-cols-2">
+                  <div className="p-2 border-gray-300 rounded flex space-x-4">
                     <div>
-                      {/* <label className="block mb-1 font-semibold">Input 1</label> */}
-                      <input
-                        type="text"
-                        placeholder="From"
-                        value={Mont1}
-                        onChange={handleInputChange1}
-                        className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
-                      />
+                      <BasicTimePicker label={"From"} /> 
                     </div>
                     <div>
-                      <div className="flex">
-                        <input
-                          type="text"
-                          value={Mont2}
-                          placeholder="To"
-                          onChange={handleInputChange2}
-                          className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
-                        />
+                      <div className="flex items-center">
+                        <BasicTimePicker label={"To"} />
                         <button
                           onClick={() => {
                             setAddTime(true);
                           }}
-                          className="p-2 ml-3 w-10 rounded-md text-white bg-blue-500"
+                          className=" ml-3 h-10 w-10 rounded-full text-white bg-blue-500"
                         >
                           +
                         </button>
                       </div>
                     </div>
-                    
                   </div>
                   {addTime && (
-                      <div className="p-2 grid gap-5 grid-cols-2">
-                        <div className="">
-                          <input
-                            type="text"
-                            value={Mont2}
-                            placeholder="From"
-                            onChange={handleInputChange2}
-                            className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
-                          />
-                        </div>
-                        <div className="">
-                          <input
-                            type="text"
-                            value={Mont2}
-                            placeholder="To"
-                            onChange={handleInputChange2}
-                            className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
-                          />
-
-                          
-                        </div>
+                    <div className="pl-2 border-gray-300 rounded flex space-x-4">
+                    <div>
+                      <BasicTimePicker label={"From"} /> 
+                    </div>
+                    <div>
+                      <div className="flex items-center">
+                        <BasicTimePicker label={"To"} />
+                        <button
+                          onClick={() => {
+                            setAddTime(true);
+                          }}
+                          className=" ml-3 h-10 w-10 rounded-full text-white bg-blue-500"
+                        >
+                          +
+                        </button>
                       </div>
-                    )}
+                    </div>
+                  </div>
+                  )}
                 </div>
               )}
               <label className="flex items-center space-x-2 py-2">
