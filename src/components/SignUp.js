@@ -1,5 +1,4 @@
 import React from 'react'
-import Logo from '../img/logo.jpg'
 import DashHead from './DashHead'
 import OtpVerification from './OtpVerification'
 
@@ -9,14 +8,12 @@ const Signup = () => {
     {
         showOtp(!setOtp);
     }
-    const [otp, setotp] = React.useState('');
   return (
     <div>
     {!setOtp &&
     <div className='flex justify-center items-center p-7 text-[black]'>
     <div className='border-[1px] border-dotted rounded-[10px] border-[black] w-2/6 "container p-5'>
         <div className="image flex justify-center my-0">
-            {/* <img className=' md:w-48 lg:w-40 xl:w-48' src={Logo}/> */}
             <DashHead/>
         </div>
         <div className='flex flex-col gap-0.5'>
