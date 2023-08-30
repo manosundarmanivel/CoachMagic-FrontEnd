@@ -1,51 +1,64 @@
 import React from 'react'
-import Logo from '../img/logo.jpg'
-
+import DashHead from './DashHead'
+import OtpVerification from './OtpVerification'
 
 const Signup = () => {
+    const [setOtp,showOtp]=React.useState(false);
+    const handleOtpGenerate=()=>
+    {
+        showOtp(!setOtp);
+    }
   return (
-    <div className='flex justify-center items-center h-screen p-7 bg-black'>
-            <div className=' border-[4px] border-[solid] rounded-[10px] border-[white]'>
-            <fieldset className= 'text-center rounded-full'>
-                <div className="container rounded-[10px] p-10 ">
-                    <div className="image flex justify-center rounded-[10px]">
-            <img className='w-24 md:w-20 lg:w-36 xl:w-37 ' src={Logo}/>
-            </div>
-            <br />
-                 <h3 className='text-[white]'>Signup</h3> 
-                <p className='text-[white]'>Just some details to get you in!</p>
-                <div className="input flex flex-col">
-                    <label for="">
-                    <input type="text" placeholder='Username' className='text-start from-transparent text-[white] rounded-[8px] border-[1px] px-10 mx-1 my-1 border-[solid] border-[white]'  />
-                    </label>
-                    <label for="">
-                    <input type="email/number" placeholder='Email/Phone' className='text-start from-transparent focus:bg-inherit text-[white] rounded-[8px] border-[1px] px-10 mx-1 my-1 border-[solid] border-[white]'  />
-                    </label>
-                    <label for="">
-                    <input type="password" placeholder='password'  className='text-start  text-[white] rounded-[8px] border-[1px] px-10 mx-1  my-1 border-[solid] border-[white]' />
-                    </label>
-                    <label for="">
-                    <input type="password" placeholder='Confirm password'  className='text-start text-[white] rounded-[8px] border-[1px] px-10 mx-1  my-1 border-[solid] border-[white]' />
-                    </label>
-                </div>
-                <div className="btn">
-                    <button className='text-[white] border-[2px] border-[solid] border-[white] px-10 py-1 rounded-[5px] bg-gradient-to-b from-blue-400 via-purple-500 to-indigo-800'  >
-                        Signup
-                    </button>
-                </div>
-                <div className="signup  ">
-                <p className='text-[white]'>Already registered?</p>
-                <a href="" className='text-[white] hover:underline hover:text-white-500'>Login</a>
-                </div>
-                <div className="footer rounded-[10px] grid grid-cols-2">
-                <a href="" className='text-[white] flex justify-start hover:underline hover:text-white-500'>Support</a>
-                <a href="" className='text-[white]  flex justify-end hover:underline hover:text-white-500'>Customer Care</a>
-                </div>
-                </div>
-            </fieldset>
-            </div>
+    <div>
+    {!setOtp &&
+    <div className='flex justify-center items-center p-7 text-[black]'>
+    <div className='border-[1px] border-dotted rounded-[10px] border-[black] w-2/6 "container p-5'>
+        <div className="image flex justify-center my-0">
+            <DashHead/>
         </div>
+        <div className='flex flex-col gap-0.5'>
+            <h3 className='mt-2.5 font-bold text-2xl'>Signup</h3>
+            <p className=''>Just some details to get you in!</p>
+            <label className='my-1.5'>
+                <input type="text" placeholder='Username' className='bg-transparent w-full text-sm  px-4 py-3 bg-gray-900 border  border-gray-700 rounded-lg focus:outline-none focus:border-indigo-500 to-blue-500'  />
+            </label>
+            <label className='my-1.5'>
+                <input type="email/number" placeholder='Email/Phone' className='bg-transparent w-full text-sm  px-4 py-3 bg-gray-900 border  border-gray-700 rounded-lg focus:outline-none focus:border-indigo-500 to-blue-500' />
+            </label>
+            <label className='my-1.5'>
+                <input type="password" placeholder='Password'  className='bg-transparent w-full text-sm  px-4 py-3 bg-gray-900 border  border-gray-700 rounded-lg focus:outline-none focus:border-indigo-500 to-blue-500' />
+            </label>
+            <label className='my-1.5'>
+                <input type="password" placeholder='Confirm password'  className='bg-transparent w-full text-sm  px-4 py-3 bg-gray-900 border  border-gray-700 rounded-lg focus:outline-none focus:border-indigo-500 to-blue-500' />
+            </label>
+            <label className='flex items-center'>
+            <input className='checkbox checkbox-sm shrink-0 rounded-sm focus:ring:0 accent-indigo-500 to-blue-500' type="checkbox" class="checkbox"/>
+            <span class="select-none text-sm ml-2 ">I agree with the terms and conditions</span>
+           </label>  
+           <div className="btn mt-2 flex justify-center">
+               <button className='text-[white] w-3/6 hover:text-[gray] p-3  rounded-lg tracking-wide font-semibold  cursor-pointer transition ease-in duration-500 bg-gradient-to-r from-indigo-500 to-blue-500' onClick={handleOtpGenerate}>Signup</button>
+            </div>
+            <label className='text-[black] hover:underline hover:text-white-500 mt-1.5 text-center'>
+               <p className=''>Already registered?<a href="" className='text-[black] '>Login</a></p>
+            </label>
+            <div className="footer rounded-[10px] grid grid-cols-2 mt-2">
+        <a href="" className='text-[black] flex justify-start hover:underline hover:text-white-500'>Support</a>
+        <a href="" className='text-[black]  flex justify-end hover:underline hover:text-white-500'>Customer Care</a>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    }
+
     
+    {
+        setOtp &&
+        (
+            <OtpVerification/>
+        )
+    }
+    </div>
   )
 }
 
