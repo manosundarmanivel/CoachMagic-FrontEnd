@@ -322,7 +322,7 @@ export default function LabTabs() {
     </div>
 
     <div classname="ml-3">
-    <p className="font-semibold py-3">available timining in day</p>
+    <p className="font-semibold py-3">available timing in day</p>
     <label className="flex items-center space-x-2 py-2">
         <input
           type="checkbox"
