@@ -10,6 +10,7 @@ import Main from "./components/Main";
 import OtpVerification from './components/OtpVerification';
 import Signin from './components/Signin';
 import Signup from './components/SignUp';
+import Invite from './components/Invite';
 
 const appRouter = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const appRouter = createBrowserRouter([
   {
     path:'/signup',
     element:<Signup/>
+  }
+  ,{
+    path:'/invite',
+    element:<Invite/>
   }
  
 ])
