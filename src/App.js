@@ -7,7 +7,6 @@ import Dashboard from "./components/Dashboard";
 
 import Settings from "./components/Settings";
 import Main from "./components/Main";
-import OtpVerification from './components/OtpVerification';
 import Signin from './components/Signin';
 import Signup from './components/SignUp';
 import Invite from './components/Invite';
@@ -26,10 +25,6 @@ const appRouter = createBrowserRouter([
         element:<Settings/>
       }
     ]
-  },
-  {
-    path:'/otp',
-    element:<OtpVerification/>
   },
   {
     path:'/signin',
