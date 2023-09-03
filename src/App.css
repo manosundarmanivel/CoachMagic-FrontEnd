@@ -71,3 +71,10 @@
     z-index: 111;
   }
 }
+.scrollbar-hidden::-webkit-scrollbar{
+  width: 0;
+  background: transparent;
+}
+.scrollbar-hidden::-webkit-scrollbar-thumb{
+  background: transparent;
+}
