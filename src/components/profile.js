@@ -13,9 +13,9 @@ const ProfilePage = () => {
   const [image2, setImage] = React.useState(Profile);
 
   return (
-    <div className='flex pl-10 py-12'>
+    <div className='flex py-5 px-1 container mx-auto '> 
     {/* <Divider sx={{ margin: "38rem" }} /> */}
-    <Divider sx={{ marginLeft: "38rem" }} />
+    <Divider sx={{ marginLeft: "29rem" }} />
     <div className='bg-purple-500 bg-opacity-50 backdrop-filter backdrop-blur-lg p-4 rounded-lg'>
     <div className="flex flex-col items-center font-poppins">
       <img

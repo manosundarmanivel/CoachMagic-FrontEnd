@@ -9,13 +9,9 @@ import Settings from "./components/Settings";
 import Main from "./components/Main";
 import Signin from './components/Signin';
 import Signup from './components/SignUp';
-<<<<<<< HEAD
 import ProfilePage from './components/profile';
-=======
 import Invite from './components/Invite';
 import Invite2 from './components/Invite2';
->>>>>>> ed48d60e275759e094847c494e8275bff202c052
-
 const appRouter = createBrowserRouter([
   {
     path:'/',
