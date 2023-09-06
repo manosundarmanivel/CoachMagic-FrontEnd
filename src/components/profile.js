@@ -3,6 +3,7 @@ import Profile from "../img/Avatar Image.svg";
 import { Link } from "react-router-dom";
 import { Divider } from "@mui/material";
 import profiledet from "./Tabs"
+import { FaShare } from 'react-icons/fa';
 import LabTabs from './Tabs';
 import { InputText } from "primereact/inputtext";
 

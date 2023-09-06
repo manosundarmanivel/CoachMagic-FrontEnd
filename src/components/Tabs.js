@@ -230,9 +230,12 @@ export default function LabTabs(){
             </div>
 
             <div className="flex p-2 pt-4">
-              <button className="text-white bg-black p-3 text-[14px] rounded-md">
+              {/* <Link><button className="text-white bg-black p-3 text-[14px] rounded-md">
                 Update Profile
-              </button>
+              </button></Link> */}
+              <Link to="/Profile"><button className="text-white hover:bg-indigo-400 bg-black p-3 text-[14px] rounded-md">
+              Update Profile
+              </button></Link>
               <button className="text-[14px] p-3 pl-8"> Reset</button>
             </div>
           </div>
