@@ -145,6 +145,9 @@ export default function LabTabs(){
       setNewYoe("");
     }
   };
+  const handleNavigate = () => {
+    window.scrollTo(0, 1);
+  };
 
   return (
     <Box sx={{ width: "100%", typography: "body1", fontFamily: "poppins" }}>
@@ -233,7 +236,8 @@ export default function LabTabs(){
               {/* <Link><button className="text-white bg-black p-3 text-[14px] rounded-md">
                 Update Profile
               </button></Link> */}
-              <Link to="/Profile"><button className="text-white hover:bg-indigo-400 bg-black p-3 text-[14px] rounded-md">
+              <Link to="/Profile"><button className="text-white hover:bg-indigo-400 bg-black p-3 text-[14px] rounded-md"
+              onClick={handleNavigate}>
               Update Profile
               </button></Link>
               <button className="text-[14px] p-3 pl-8"> Reset</button>
