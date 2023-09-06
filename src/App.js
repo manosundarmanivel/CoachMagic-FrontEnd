@@ -7,10 +7,14 @@ import Dashboard from "./components/Dashboard";
 
 import Settings from "./components/Settings";
 import Main from "./components/Main";
-import OtpVerification from './components/OtpVerification';
 import Signin from './components/Signin';
 import Signup from './components/SignUp';
+<<<<<<< HEAD
 import ProfilePage from './components/profile';
+=======
+import Invite from './components/Invite';
+import Invite2 from './components/Invite2';
+>>>>>>> ed48d60e275759e094847c494e8275bff202c052
 
 const appRouter = createBrowserRouter([
   {
@@ -28,10 +32,6 @@ const appRouter = createBrowserRouter([
     ]
   },
   {
-    path:'/otp',
-    element:<OtpVerification/>
-  },
-  {
     path:'/signin',
     element:<Signin/>
   },
@@ -42,6 +42,14 @@ const appRouter = createBrowserRouter([
   {
     path:'/Profile',
     element:<ProfilePage/>
+  }
+  ,{
+    path:'/invite',
+    element:<Invite/>
+  },
+  {
+    path:'/invite2',
+    element:<Invite2/>
   }
  
 ])
