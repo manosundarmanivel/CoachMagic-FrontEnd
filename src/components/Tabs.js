@@ -9,7 +9,7 @@ import { InputText } from "primereact/inputtext";
 import { Divider } from "@mui/material";
 import { Link } from "react-router-dom";
 // import { TimePicker } from "@mui/x-date-pickers";
-import BasicTimePicker from "./TimePicker";
+// import BasicTimePicker from "./TimePicker";
 
 const timezones = [
   "(UTC+05:30) Chennai, Kolkata, Mumbai, New Delhi",
@@ -18,7 +18,12 @@ const timezones = [
   "Europe/London",
   // Add more timezones as needed
 ];
-export default function LabTabs() {
+const profiledet={
+  name:"nekelash",
+  bio:"Hi there im using coach magic",
+  email:"nekelashil@gmail.com"
+};
+export default function LabTabs(){
   const [value, setValue] = React.useState("1");
 
   const handleChange = (event, newValue) => {
@@ -53,7 +58,7 @@ export default function LabTabs() {
   const [isChecked6, setIsChecked6] = useState(false);
   const [isChecked7, setIsChecked7] = useState(false);
 
-  const [addTime, setAddTime] = useState(false);
+  // const [addTime, setAddTime] = useState(false);
 
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);
@@ -178,10 +183,10 @@ export default function LabTabs() {
                   className="bg-[#FAFBFC] border border-gray-400 rounded-lg p-2 w-[400px]"
                   placeholder="Please enter the Domain"
                 />
-                <h1 className="font-[16px] pb-2 pt-2">Bio</h1>
+                <h1 className="font-[16px] pb-2 pt-2">Slogan</h1>
                 <input
                   className="bg-[#FAFBFC] border border-gray-400 rounded-lg p-2 w-[400px]"
-                  placeholder="Craft your bio"
+                  placeholder="Write your slogan"
                 />
                 <h1 className="font-[16px] pb-2 pt-2">Tag</h1>
                 {/* <input className='bg-[#FAFBFC] border border-gray-400 rounded-lg p-2 w-[400px]' placeholder='Craft your bio'/> */}
@@ -216,10 +221,10 @@ export default function LabTabs() {
                   className="bg-[#FAFBFC] border border-gray-400 rounded-lg p-2 w-[400px]"
                   placeholder="Link to Social Account"
                 />
-                <h1 className="font-[16px] pb-2 pt-2">Slogan</h1>
-                <input
+                <h1 className="font-[16px] pb-2 pt-2">Bio</h1>
+                <textarea
                   className="bg-[#FAFBFC] border border-gray-400 rounded-lg p-2 w-[400px]"
-                  placeholder="Write Your Slogan"
+                  placeholder="Craft your bio"
                 />
               </div>
             </div>
@@ -589,3 +594,4 @@ export default function LabTabs() {
     </Box>
   );
 }
+// export  profiledet;
