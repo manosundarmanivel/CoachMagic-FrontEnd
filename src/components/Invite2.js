@@ -15,7 +15,7 @@ const Invite2 =()=>
     const lists=[
         {
             id:1,
-            image:"Avatar",
+            image:"https://media.istockphoto.com/id/1386479313/photo/happy-millennial-afro-american-business-woman-posing-isolated-on-white.webp?b=1&s=170667a&w=0&k=20&c=ahypUC_KTc95VOsBkzLFZiCQ0VJwewfrSV43BOrLETM=",
             name:"John issac",
             role:"Software Devops Engineer",
             time_starts:"9pm",
@@ -27,7 +27,7 @@ const Invite2 =()=>
         {
             id:2,
             image:"Avatar",
-            name:"John issac",
+            name:"john issac",
             role:"Software Devops Engineer",
             time_starts:"9pm",
             time_ends:"11pm",
@@ -38,7 +38,7 @@ const Invite2 =()=>
         {
             id:3,
             image:"Avatar",
-            name:"John issac",
+            name:"john issac",
             role:"Software Devops Engineer",
             time_starts:"9pm",
             time_ends:"11pm",
@@ -49,7 +49,7 @@ const Invite2 =()=>
         {
             id:4,
             image:"Avatar",
-            name:"John issac",
+            name:"john issac",
             role:"Software Devops Engineer",
             time_starts:"9pm",
             time_ends:"11pm",
@@ -174,7 +174,7 @@ const Invite2 =()=>
                             {/* profile + name+ role begins */}
                             <div className="flex items-center">
                             <img
-                            alt="img" src={`../img/Avatar.jpg`}
+                            alt="img" src={list.image}
                             className=" m-2 h-[100px] w-[100px] rounded-full object-cover"
                             />
                             <div className="flex flex-col justify-center">
