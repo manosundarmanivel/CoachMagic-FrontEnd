@@ -28,11 +28,11 @@ const ProfilePage = () => {
     };
 
   return (
-    <div className='flex flex-row py-5 px-1 container mx-auto '> 
-    {/* <Divider sx={{ margin: "38rem" }} /> */}
-    <Divider sx={{ marginLeft: "29rem" }} />
+    <div className='flex flex-row py-5 px-1 container ml-10 mt-5'> 
     
-    <div className='bg-purple-500 bg-opacity-50 backdrop-filter backdrop-blur-lg p-4 rounded-lg'>
+   
+    
+    <div className='bg-[#F1ECFF] bg-opacity-50 backdrop-filter  w-[1000px] backdrop-blur-lg p-4 rounded-2xl'>
     <div className="flex flex-col items-center font-poppins">
     <button className="flex absolute top-3 right-4 p-1 text-gray-500 hover:text-gray-700"
     onClick={handleShareButtonClick}>
@@ -97,7 +97,7 @@ const ProfilePage = () => {
     </div>
     
     </div>
-    <Divider sx={{ marginTop: "25px" }} />
+
     {showPopWindow && (
         <div className="pop-window px-4 py-2">
           <div className="share-icons py-2">
