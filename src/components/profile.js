@@ -1,11 +1,11 @@
 import React, {useState } from 'react';
 import Profile from "../img/Avatar Image.svg";
-import { Link } from "react-router-dom";
-import { Divider } from "@mui/material";
-import profiledet from "./Tabs"
+// import { Link } from "react-router-dom";
+// import { Divider } from "@mui/material";
+// import profiledet from "./Tabs"
 import { FaShare } from 'react-icons/fa';
-import LabTabs from './Tabs';
-import { InputText } from "primereact/inputtext";
+// import LabTabs from './Tabs';
+// import { InputText } from "primereact/inputtext";
 import wic from "../img/whatsapp-color-svgrepo-com.svg";
 import lic from "../img/link-circle-svgrepo-com.svg";
 import gic from "../img/gmail-svgrepo-com.svg"
@@ -30,7 +30,7 @@ const ProfilePage = () => {
       setShowPopWindow(false);
     };
     
-    const backgroundImage = require('../img/whatsapp.png');
+    // const backgroundImage = require('../img/whatsapp.png');
   return (
     <div className='py-12'>
     
@@ -65,65 +65,78 @@ const ProfilePage = () => {
       <p className="text-2xl font-bold">Backend developer</p>
       <p className="text-2xl font-bold mb-2">Warrior</p>
       <p className="text-2xl font-bold mb-1">I AM DOWN, BUT I NOT LET YOU DOWN</p>
-    <div className="flex flex-row justify-center items-center py-3 px-2 ml-2">
-      <div className="max-w-md h-[220px] w-[600px] p-4 bg-gray-100 rounded-lg shadow-lg border-2 border-gray-500">
+    
+
+
+
+
+
+
+
+    <div className="flex ">
+              <div className="p-2 m-0">
+              <div className="max-w-md h-[220px] w-[600px] p-2 bg-gray-100 rounded-lg shadow-lg border-2 border-blue-500">
         <h1 className="text-2xl font-bold mb-4">Bio</h1>
         <p className="text-left text-2xl font-bold mb-4">
         {bio}
         </p>
       </div>
-      <div className="max-w-md w-[600px] h-[220px] ml-5 p-4 px-2 bg-gray-100 rounded-lg shadow-lg border-2 border-gray-500">
-      <div className='px-5'>
-      <label className='list-decimal text-2xl font-bold mb-4'>
-        <h1 className="text-2xl font-bold mb-4">Skills and years of experience</h1>
-        {/* <input type="checkbox" className="hidden" /> */}
-        {/* <span className="list-marker"></span> */}
-        
-        <li>AutoCAD 2011 - 2Yrs</li>
-        <li>Fusion 360 -4Yrs</li>
-        <li>CRED 7.1 -3Yrs</li>
-        <li>SolidWorks 2018 - 3Yrs</li>
-        <li>Selenium and Java - 1Yrs</li>
-
-      </label>
-      </div>
-      </div>
-    </div>
-    
-      <div className="flex flex-row py-3">
-      <div className="max-w-md p-4 bg-gray-100 rounded-lg shadow-lg py-2 border-2 border-gray-500">
+      <div className="max-w-md p-2 m-2 ml-0 mt-6 bg-gray-100 rounded-lg shadow-lg py-2 px-4 border-2 border-blue-500 w-screen">
           <h1 className="text-2xl font-bold mb-4">Preceding
-          <p className="text-center">
+          <p className="text-left">
           {preced}
           </p>
           </h1>
       </div>
-      <div className="max-w-md ml-3 p-4 bg-gray-100 rounded-lg shadow-lg py-2 border-2 border-gray-500">
+                
+              </div>
+              <div className="p-2 ml-0">
+              <div className="max-w-md w-[600px] h-[220px] ml-0 p-2 px-0 bg-gray-100 rounded-lg shadow-lg border-2 border-blue-500">
+      <div className="px-5 ">
+      <label className='list-decimal text-2xl font-bold mb-4'>
+        <h1 className="text-2xl font-bold mb-4">Skills and years of experience</h1>
+      
+        <ol  type="1" className="py-0">
+         <li>AutoCAD 2011 - 2Yrs</li>
+         <li>Fusion 360 -4Yrs</li>
+         <li>CRED 7.1 -3Yrs</li>
+         <li>SolidWorks 2018 - 3Yrs</li>
+         <li>Selenium and Java - 1Yrs</li>
+        </ol>
+      </label>
+      </div>
+      
+      </div>
+      <div className="max-w-md m-6 ml-0 mt-6 p-4 bg-gray-100 rounded-lg shadow-lg py-2 px-4 border-2 border-blue-500 w-screen">
           <h1 className="text-2xl font-bold mb-4">Existing
-          <p className="text-center">
+          <p className="text-left">
           {exit}
           </p>
           </h1>
       </div>
+      
+              </div>
+
     </div>
-    <div className='flex flex-row py-6 -mx-4'>
-    <div className="max-w-md ml-4 p-4 bg-gray-100 rounded-lg shadow-lg py-5 px-4 border-2 border-gray-500">
+
+    <div class="grid grid-flow-row px-8 grid-cols-5 ...">
+    <div className="max-w-md ml-0 p-4 bg-gray-100 rounded-lg shadow-lg py-5 px-4 border-2 border-blue-500 col-span-2">
           <h1 className="text-2xl font-bold mb-4">Email
-          <p className="text-center">
+          <p className="text-left">
           israth786anwar@gmail.com
           </p>
           </h1>
       </div>
-      <div className="max-w-md ml-4 p-4 bg-gray-100 rounded-lg shadow-lg py-5 px-4 border-2 border-gray-500">
+      <div className="max-w-md ml-4 p-4 bg-gray-100 rounded-lg shadow-lg py-5 px-4 border-2 border-blue-500 col-span-1">
           <h1 className="text-2xl font-bold mb-4">Phone
-          <p className="text-center">
+          <p className="text-left">
           +91 99999 xxxxx
           </p>
           </h1>
       </div>
-      <div className="max-w-md ml-4 p-4 bg-gray-100 rounded-lg shadow-lg py-5 px-4 border-2 border-gray-500">
+      <div className="max-w-md ml-4 p-4 bg-gray-100 rounded-lg shadow-lg py-5 px-4 border-2 border-blue-500 col-span-2">
           <h1 className="text-2xl font-bold mb-4">social handles
-          <p className="text-center">
+          <p className="text-left">
           linkedin.com/in/syed-israth-786268202
           </p>
           </h1>
