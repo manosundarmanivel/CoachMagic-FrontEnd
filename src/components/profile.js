@@ -13,9 +13,12 @@ import gic from "../img/gmail-svgrepo-com.svg"
 
 
 const ProfilePage = () => {
-    const[image,setimage] = useState(Profile);
+  const [color, setColor] = useState('');
+  const[image,setimage] = useState(Profile);
   const bio = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, urna id aliquet ultrices, justo nisl tincidunt nunc, ac lacinia nunc nisl nec nunc. Nulla facilisi. Sed euismod, urna id aliquet ultrices, justo nisl tincidunt nunc, ac lacinia nunc nisl nec nunc. Nulla facilisi.";
-  const [image2, setImage] = React.useState(Profile);
+  const preced = "Kongu Engineering college"
+  const exit = "Google, California"
+  // const [image2, setImage] = React.useState(Profile);
 
     const [showPopWindow, setShowPopWindow] = useState(false);
   
@@ -26,13 +29,21 @@ const ProfilePage = () => {
     const closePopWindow = () => {
       setShowPopWindow(false);
     };
-
+    
+    const backgroundImage = require('../img/whatsapp.png');
   return (
-    <div className='flex flex-row py-5 px-1 container ml-10 mt-5'> 
+    <div className='py-12'>
     
-   
-    
-    <div className='bg-[#F1ECFF] bg-opacity-50 backdrop-filter  w-[1000px] backdrop-blur-lg p-4 rounded-2xl'>
+    <div className='flex flex-row right-4  px-2 w-[1300px] h-[750px] container ml-10 mt-5 rounded-3xl'
+    style={
+      {
+        backgroundImage: `url(${gic})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        // filter: 'blur(10px)'
+      }
+    }> 
+    <div className='bg-[#F1ECFF] bg-opacity-8 backdrop-filter  w-[1300px] h-[850px] backdrop-blur-lg p-2 rounded-2xl'>
     <div className="flex flex-col items-center font-poppins">
     <button className="flex absolute top-3 right-4 p-1 text-gray-500 hover:text-gray-700"
     onClick={handleShareButtonClick}>
@@ -50,51 +61,82 @@ const ProfilePage = () => {
                 setImage(URL.createObjectURL(event.target.files[0]));
               }}
             /> */}
-      <h1 className="text-2xl font-bold mt-4">Nekelash</h1>
-      <p className="text-gray-500">Backend developer</p>
-      <p className="text-2xl font-bold mb-4">Warrior</p>
-    <div className="flex-col justify-center items-center py-4 ">
-      <div className="max-w-md p-3 bg-gray-100 rounded-lg shadow-lg">
-        <h1 className="text-2xl font-bold mb-4">Profile Page</h1>
-        <p className="text-center">
+      <h1 className="text-3xl font-bold mt-4 ">Nekelash</h1>
+      <p className="text-2xl font-bold">Backend developer</p>
+      <p className="text-2xl font-bold mb-2">Warrior</p>
+      <p className="text-2xl font-bold mb-1">I AM DOWN, BUT I NOT LET YOU DOWN</p>
+    <div className="flex flex-row justify-center items-center py-3 px-2 ml-2">
+      <div className="max-w-md h-[220px] w-[600px] p-4 bg-gray-100 rounded-lg shadow-lg border-2 border-gray-500">
+        <h1 className="text-2xl font-bold mb-4">Bio</h1>
+        <p className="text-left text-2xl font-bold mb-4">
         {bio}
         </p>
       </div>
+      <div className="max-w-md w-[600px] h-[220px] ml-5 p-4 px-2 bg-gray-100 rounded-lg shadow-lg border-2 border-gray-500">
+      <div className='px-5'>
+      <label className='list-decimal text-2xl font-bold mb-4'>
+        <h1 className="text-2xl font-bold mb-4">Skills and years of experience</h1>
+        {/* <input type="checkbox" className="hidden" /> */}
+        {/* <span className="list-marker"></span> */}
+        
+        <li>AutoCAD 2011 - 2Yrs</li>
+        <li>Fusion 360 -4Yrs</li>
+        <li>CRED 7.1 -3Yrs</li>
+        <li>SolidWorks 2018 - 3Yrs</li>
+        <li>Selenium and Java - 1Yrs</li>
+
+      </label>
+      </div>
+      </div>
     </div>
     
-      <div className="flex-col justify-center items-center py-4">
-      <div className="max-w-md p-4 rounded-lg shadow-lg py-5 ">
-          <h1 className="text-2xl font-bold mb-4">Slogan
+      <div className="flex flex-row py-3">
+      <div className="max-w-md p-4 bg-gray-100 rounded-lg shadow-lg py-2 border-2 border-gray-500">
+          <h1 className="text-2xl font-bold mb-4">Preceding
           <p className="text-center">
-          Anna ungaluku na periya fan na!!!
+          {preced}
+          </p>
+          </h1>
+      </div>
+      <div className="max-w-md ml-3 p-4 bg-gray-100 rounded-lg shadow-lg py-2 border-2 border-gray-500">
+          <h1 className="text-2xl font-bold mb-4">Existing
+          <p className="text-center">
+          {exit}
           </p>
           </h1>
       </div>
     </div>
-    <div className='flex flex-row px-2 py-6 ml-2'>
-    <div className="max-w-md p-4 rounded-lg shadow-lg py-5">
+    <div className='flex flex-row py-6 -mx-4'>
+    <div className="max-w-md ml-4 p-4 bg-gray-100 rounded-lg shadow-lg py-5 px-4 border-2 border-gray-500">
           <h1 className="text-2xl font-bold mb-4">Email
           <p className="text-center">
-          nekelash@gamil.com
+          israth786anwar@gmail.com
           </p>
           </h1>
       </div>
-      <div className="max-w-md p-4 rounded-lg shadow-lg py-5">
+      <div className="max-w-md ml-4 p-4 bg-gray-100 rounded-lg shadow-lg py-5 px-4 border-2 border-gray-500">
           <h1 className="text-2xl font-bold mb-4">Phone
           <p className="text-center">
           +91 99999 xxxxx
           </p>
           </h1>
       </div>
-      <div className="max-w-md p-4 rounded-lg shadow-lg py-5">
+      <div className="max-w-md ml-4 p-4 bg-gray-100 rounded-lg shadow-lg py-5 px-4 border-2 border-gray-500">
           <h1 className="text-2xl font-bold mb-4">social handles
           <p className="text-center">
-          nekelash@gamil.com
+          linkedin.com/in/syed-israth-786268202
           </p>
           </h1>
       </div>
       </div>
     </div>
+    <div className="flex flex-row justify-center items-center py-3 px-2 ml-2">
+          <h1 className="text-2xl font-bold mb-4">Schedule page link<span> </span>
+         <span className="text-blue-500">
+        <a href={'linkedin.com/in/syed-israth-786268202'} className="underline"> Click here </a>
+      </span>
+         </h1>
+      </div>
     
     </div>
 
@@ -118,6 +160,7 @@ const ProfilePage = () => {
           <button onClick={closePopWindow}>Close</button>
         </div>
       )}
+    </div>
     </div>
   );
 };

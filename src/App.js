@@ -12,6 +12,7 @@ import Signup from './components/SignUp';
 import ProfilePage from './components/profile';
 import Invite from './components/Invite';
 import Invite2 from './components/Invite2';
+import Test from './components/testing';
 const appRouter = createBrowserRouter([
   {
     path:'/',
@@ -50,6 +51,10 @@ const appRouter = createBrowserRouter([
   {
     path:'/invite2',
     element:<Invite2/>
+  },
+  {
+      path:'/profiletest',
+      element:<Test/> 
   }
  
 ])
