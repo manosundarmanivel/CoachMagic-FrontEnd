@@ -32,7 +32,7 @@ const ProfilePage = () => {
     
     const backgroundImage = require('../img/whatsapp.png');
   return (
-    <div className='py-12'>
+    <div className='py-10'>
     
     <div className='flex flex-row right-4  px-2 w-[1300px] h-[750px] container ml-10 mt-5 rounded-3xl'
     style={
