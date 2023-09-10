@@ -9,6 +9,7 @@ import { FaShare } from 'react-icons/fa';
 import wic from "../img/whatsapp-color-svgrepo-com.svg";
 import lic from "../img/link-circle-svgrepo-com.svg";
 import gic from "../img/gmail-svgrepo-com.svg"
+import bropic from "../img/bro-prof.png";
 
 
 
@@ -51,7 +52,7 @@ const ProfilePage = () => {
         Share
       </button>
       <img
-        src={image}
+        src={bropic}
         alt="Profile"
         className="w-32 h-32 rounded-full"
       />
@@ -61,7 +62,7 @@ const ProfilePage = () => {
                 setImage(URL.createObjectURL(event.target.files[0]));
               }}
             /> */}
-      <h1 className="text-3xl font-bold mt-4 ">Nekelash</h1>
+      <h1 className="text-3xl font-bold mt-4 ">SYED IRSATH</h1>
       <p className="text-2xl font-bold">Backend developer</p>
       <p className="text-2xl font-bold mb-2">Warrior</p>
       <p className="text-2xl font-bold mb-1">I AM DOWN, BUT I NOT LET YOU DOWN</p>
@@ -74,10 +75,10 @@ const ProfilePage = () => {
 
 
     <div className="flex ">
-              <div className="p-2 m-0">
+              <div className="p-2">
               <div className="max-w-md h-[220px] w-[600px] p-2 bg-gray-100 rounded-lg shadow-lg border-2 border-blue-500">
-        <h1 className="text-2xl font-bold mb-4">Bio</h1>
-        <p className="text-left text-2xl font-bold mb-4">
+        <h1 className="text-2xl font-bold mb-4 ml-2">Bio</h1>
+        <p className="text-left text-2xl font-bold mb-4 ml-2">
         {bio}
         </p>
       </div>
@@ -119,7 +120,7 @@ const ProfilePage = () => {
 
     </div>
 
-    <div class="grid grid-flow-row px-8 grid-cols-5 ...">
+    <div class="grid grid-flow-row px-8 mr-2 grid-cols-5 ...">
     <div className="max-w-md ml-0 p-4 bg-gray-100 rounded-lg shadow-lg py-5 px-4 border-2 border-blue-500 col-span-2">
           <h1 className="text-2xl font-bold mb-4">Email
           <p className="text-left">
