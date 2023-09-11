@@ -28,6 +28,10 @@ const appRouter = createBrowserRouter([
       {
         path:'/profile',
         element:<ProfilePage/>
+      },
+      {
+        path:'//invitations',
+        element:<Invite2/>
       }
     ]
   },
