@@ -8,8 +8,8 @@ import Profile from "../img/Avatar Image.svg";
 import { InputText } from "primereact/inputtext";
 import { Divider } from "@mui/material";
 import { Link } from "react-router-dom";
-// import { TimePicker } from "@mui/x-date-pickers";
-// import BasicTimePicker from "./TimePicker";
+import { TimePicker } from "@mui/x-date-pickers";
+import BasicTimePicker from "./TimePicker";
 
 const timezones = [
   "(UTC+05:30) Chennai, Kolkata, Mumbai, New Delhi",
@@ -18,12 +18,7 @@ const timezones = [
   "Europe/London",
   // Add more timezones as needed
 ];
-const profiledet={
-  name:"nekelash",
-  bio:"Hi there im using coach magic",
-  email:"nekelashil@gmail.com"
-};
-export default function LabTabs(){
+export default function LabTabs() {
   const [value, setValue] = React.useState("1");
 
   const handleChange = (event, newValue) => {
@@ -58,7 +53,7 @@ export default function LabTabs(){
   const [isChecked6, setIsChecked6] = useState(false);
   const [isChecked7, setIsChecked7] = useState(false);
 
-  // const [addTime, setAddTime] = useState(false);
+  const [addTime, setAddTime] = useState(false);
 
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);
@@ -145,9 +140,6 @@ export default function LabTabs(){
       setNewYoe("");
     }
   };
-  const handleNavigate = () => {
-    window.scrollTo(0, 1);
-  };
 
   return (
     <Box sx={{ width: "100%", typography: "body1", fontFamily: "poppins" }}>
@@ -186,10 +178,10 @@ export default function LabTabs(){
                   className="bg-[#FAFBFC] border border-gray-400 rounded-lg p-2 w-[400px]"
                   placeholder="Please enter the Domain"
                 />
-                <h1 className="font-[16px] pb-2 pt-2">Slogan</h1>
+                <h1 className="font-[16px] pb-2 pt-2">Bio</h1>
                 <input
                   className="bg-[#FAFBFC] border border-gray-400 rounded-lg p-2 w-[400px]"
-                  placeholder="Write your slogan"
+                  placeholder="Craft your bio"
                 />
                 <h1 className="font-[16px] pb-2 pt-2">Tag</h1>
                 {/* <input className='bg-[#FAFBFC] border border-gray-400 rounded-lg p-2 w-[400px]' placeholder='Craft your bio'/> */}
@@ -224,22 +216,18 @@ export default function LabTabs(){
                   className="bg-[#FAFBFC] border border-gray-400 rounded-lg p-2 w-[400px]"
                   placeholder="Link to Social Account"
                 />
-                <h1 className="font-[16px] pb-2 pt-2">Bio</h1>
-                <textarea
+                <h1 className="font-[16px] pb-2 pt-2">Slogan</h1>
+                <input
                   className="bg-[#FAFBFC] border border-gray-400 rounded-lg p-2 w-[400px]"
-                  placeholder="Craft your bio"
+                  placeholder="Write Your Slogan"
                 />
               </div>
             </div>
 
             <div className="flex p-2 pt-4">
-              {/* <Link><button className="text-white bg-black p-3 text-[14px] rounded-md">
+              <button className="text-white bg-black p-3 text-[14px] rounded-md">
                 Update Profile
-              </button></Link> */}
-              <Link to="/Profile"><button className="text-white hover:bg-indigo-400 bg-black p-3 text-[14px] rounded-md"
-              onClick={handleNavigate}>
-              Update Profile
-              </button></Link>
+              </button>
               <button className="text-[14px] p-3 pl-8"> Reset</button>
             </div>
           </div>
@@ -333,267 +321,293 @@ export default function LabTabs(){
               <p>____________________________________________________</p>
             </div>
 
-    <div classname="ml-3">
-    <p className="font-semibold py-3">available timing in day</p>
-    <label className="flex items-center space-x-2 py-2">
-        <input
-          type="checkbox"
-          checked={isChecked}
-          onChange={handleCheckboxChange}
-          className="form-checkbox"
-        />
-        <span>Monday</span>
-      </label>
-      {isChecked && (
-        <div className="p-2 border-gray-300 rounded grid gap-20 grid-cols-2">
-          <div>
-            {/* <label className="block mb-1 font-semibold">Input 1</label> */}
-            <input
-              type="text"
-              placeholder="From"
-              value={Mont1}
-              onChange={handleInputChange1}
-              className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
-            />
-          </div>
-          <div>
-            {/* <label className="block mb-1 font-semibold">Input 2</label> */}
-            <input
-              type="text"
-              value={Mont2}
-              placeholder="To"
-              onChange={handleInputChange2}
-              className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
-            />
-          </div>
-        </div>
-      )}
-      <label className="flex items-center space-x-2 py-2">
-        <input
-          type="checkbox"
-          checked={isChecked2}
-          onChange={handleCheckboxChange2}
-          className="form-checkbox"
-        />
-        <span>Tuesday</span>
-      </label>
-      {isChecked2 && (
-        <div className="p-2border-gray-300 rounded grid gap-20 grid-cols-2">
-          <div>
-            {/* <label className="block mb-1 font-semibold">Input 1</label> */}
-            <input
-              placeholder="From"
-              type="text"
-              value={Tue1}
-              onChange={handleInputChange3}
-              className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
-            />
-          </div>
-          <div>
-            {/* <label className="block mb-1 font-semibold">Input 2</label> */}
-            <input
-              type="text"
-              value={Tue2}
-              placeholder="To"
-              onChange={handleInputChange4}
-              className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
-            />
-          </div>
-        </div>
-      )}
-      <label className="flex items-center space-x-2 py-2">
-        <input
-          type="checkbox"
-          checked={isChecked3}
-          onChange={handleCheckboxChange3}
-          className="form-checkbox"
-        />
-        <span>Wednesday</span>
-      </label>
-      {isChecked3 && (
-        <div className="p-2 border-gray-300 rounded grid gap-20 grid-cols-2">
-          <div>
-            {/* <label className="block mb-1 font-semibold">Input 1</label> */}
-            <input
-              type="text"
-              placeholder="From"
-              value={Wed1}
-              onChange={handleInputChange5}
-              className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
-            />
-          </div>
-          <div>
-            {/* <label className="block mb-1 font-semibold">Input 2</label> */}
-            <input
-              type="text"
-              value={Wed2}
-              placeholder="To"
-              onChange={handleInputChange6}
-              className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
-            />
-          </div>
-        </div>
-      )}
-      <label className="flex items-center space-x-2 py-2">
-        <input
-          type="checkbox"
-          checked={isChecked4}
-          onChange={handleCheckboxChange4}
-          className="form-checkbox"
-        />
-        <span>Thursday</span>
-      </label>
-      {isChecked4 && (
-        <div className="p-2 border-gray-300 rounded grid gap-20 grid-cols-2">
-          <div>
-            {/* <label className="block mb-1 font-semibold">Input 1</label> */}
-            <input
-              type="text"
-              placeholder="From"
-              value={Thu1}
-              onChange={handleInputChange7}
-              className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
-            />
-          </div>
-          <div>
-            {/* <label className="block mb-1 font-semibold">Input 2</label> */}
-            <input
-              type="text"
-              value={Thu2}
-              placeholder="To"
-              onChange={handleInputChange8}
-              className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
-            />
-          </div>
-        </div>
-      )}
-      <label className="flex items-center space-x-2 py-2 py-2">
-        <input
-          type="checkbox"
-          checked={isChecked5}
-          onChange={handleCheckboxChange5}
-          className="form-checkbox"
-        />
-        <span>Friday</span>
-      </label>
-      {isChecked5 && (
-        <div className="p-2 border-gray-300 rounded grid gap-20 grid-cols-2">
-          <div>
-            {/* <label className="block mb-1 font-semibold">Input 1</label> */}
-            <input
-              type="text"
-              placeholder="From"
-              value={Fri1}
-              onChange={handleInputChange9}
-              className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
-            />
-          </div>
-          <div>
-            {/* <label className="block mb-1 font-semibold">Input 2</label> */}
-            <input
-              type="text"
-              value={Fri2}
-              placeholder="To"
-              onChange={handleInputChange10}
-              className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
-            />
-          </div>
-        </div>
-      )}
-      <label className="flex items-center space-x-2 py-2 py-2">
-        <input
-          type="checkbox"
-          checked={isChecked6}
-          onChange={handleCheckboxChange6}
-          className="form-checkbox"
-        />
-        <span>Saturday</span>
-      </label>
-      {isChecked6 && (
-        <div className="p-2 border-gray-300 rounded grid gap-20 grid-cols-2">
-          <div>
-            {/* <label className="block mb-1 font-semibold">Input 1</label> */}
-            <input
-              type="text"
-              placeholder="From"
-              value={Sat1}
-              onChange={handleInputChange11}
-              className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
-            />
-          </div>
-          <div>
-            {/* <label className="block mb-1 font-semibold">Input 2</label> */}
-            <input
-              type="text"
-              value={Sat2}
-              placeholder="To"
-              onChange={handleInputChange12}
-              className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
-            />
-          </div>
-        </div>
-      )}
-      <label className="flex items-center space-x-2 py-2">
-        <input
-          type="checkbox"
-          checked={isChecked7}
-          onChange={handleCheckboxChange7}
-          className="form-checkbox"
-        />
-        <span>Sunday</span>
-      </label>
-      {isChecked7 && (
-        <div className="p-2 border-gray-300 rounded grid gap-20 grid-cols-2">
-          <div>
-            {/* <label className="block mb-1 font-semibold">Input 1</label> */}
-            <input
-              type="text"
-              placeholder="From"
-              value={Sun1}
-              onChange={handleInputChange13}
-              className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
-            />
-          </div>
-          <div>
-            {/* <label className="block mb-1 font-semibold">Input 2</label> */}
-            <input
-              type="text"
-              value={Sun2}
-              placeholder="To"
-              onChange={handleInputChange14}
-              className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
-            />
-          </div>
-          
-        </div>
-      )}
-      <p>____________________________________________________</p>
-      </div>
-      <div className="flex items-center py-4">
-      <p className="font-semibold mr-5">Block the date and time of unavailable </p>
-      <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-1 px-4 rounded flex items-center space-x-2">      
-      <svg
-        className="w-5 h-7"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d="M12 6v6m0 0v6m0-6h6m-6 0H6"
-        />
-      </svg>
-      <span>Add Schedule</span>
-    </button>
-    </div>
-              <div className="flex p-2 pt-4">
-              <Link to="/"><button className="text-white hover:bg-indigo-400 bg-black p-3 text-[14px] rounded-md">
-                Save Changes
-              </button></Link>
-              <Link to="/settings"><button className="text-[15px] p-3 pl-8 hover:text-red-500"> Reset</button></Link>
+            <div classname="ml-3">
+              <p className="font-semibold py-3">Available timining in day</p>
+              <label className="flex items-center space-x-2 py-2">
+                <input
+                  type="checkbox"
+                  checked={isChecked}
+                  onChange={handleCheckboxChange}
+                  className="form-checkbox"
+                />
+                <span>Monday</span>
+              </label>
+              {isChecked && (
+                <div>
+                  <div className="p-2 border-gray-300 rounded flex space-x-4">
+                    <div>
+                      <BasicTimePicker label={"From"} /> 
+                    </div>
+                    <div>
+                      <div className="flex items-center">
+                        <BasicTimePicker label={"To"} />
+                        <button
+                          onClick={() => {
+                            setAddTime(true);
+                          }}
+                          className=" ml-3 h-10 w-10 rounded-full text-white bg-blue-500"
+                        >
+                          +
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  {addTime && (
+                    <div className="pl-2 border-gray-300 rounded flex space-x-4">
+                    <div>
+                      <BasicTimePicker label={"From"} /> 
+                    </div>
+                    <div>
+                      <div className="flex items-center">
+                        <BasicTimePicker label={"To"} />
+                        <button
+                          onClick={() => {
+                            setAddTime(true);
+                          }}
+                          className=" ml-3 h-10 w-10 rounded-full text-white bg-blue-500"
+                        >
+                          +
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  )}
+                </div>
+              )}
+              <label className="flex items-center space-x-2 py-2">
+                <input
+                  type="checkbox"
+                  checked={isChecked2}
+                  onChange={handleCheckboxChange2}
+                  className="form-checkbox"
+                />
+                <span>Tuesday</span>
+              </label>
+              {isChecked2 && (
+                <div className="p-2border-gray-300 rounded grid gap-20 grid-cols-2">
+                  <div>
+                    {/* <label className="block mb-1 font-semibold">Input 1</label> */}
+                    <input
+                      placeholder="From"
+                      type="text"
+                      value={Tue1}
+                      onChange={handleInputChange3}
+                      className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
+                    />
+                  </div>
+                  <div>
+                    {/* <label className="block mb-1 font-semibold">Input 2</label> */}
+                    <input
+                      type="text"
+                      value={Tue2}
+                      placeholder="To"
+                      onChange={handleInputChange4}
+                      className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
+                    />
+                  </div>
+                </div>
+              )}
+              <label className="flex items-center space-x-2 py-2">
+                <input
+                  type="checkbox"
+                  checked={isChecked3}
+                  onChange={handleCheckboxChange3}
+                  className="form-checkbox"
+                />
+                <span>Wednesday</span>
+              </label>
+              {isChecked3 && (
+                <div className="p-2 border-gray-300 rounded grid gap-20 grid-cols-2">
+                  <div>
+                    {/* <label className="block mb-1 font-semibold">Input 1</label> */}
+                    <input
+                      type="text"
+                      placeholder="From"
+                      value={Wed1}
+                      onChange={handleInputChange5}
+                      className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
+                    />
+                  </div>
+                  <div>
+                    {/* <label className="block mb-1 font-semibold">Input 2</label> */}
+                    <input
+                      type="text"
+                      value={Wed2}
+                      placeholder="To"
+                      onChange={handleInputChange6}
+                      className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
+                    />
+                  </div>
+                </div>
+              )}
+              <label className="flex items-center space-x-2 py-2">
+                <input
+                  type="checkbox"
+                  checked={isChecked4}
+                  onChange={handleCheckboxChange4}
+                  className="form-checkbox"
+                />
+                <span>Thursday</span>
+              </label>
+              {isChecked4 && (
+                <div className="p-2 border-gray-300 rounded grid gap-20 grid-cols-2">
+                  <div>
+                    {/* <label className="block mb-1 font-semibold">Input 1</label> */}
+                    <input
+                      type="text"
+                      placeholder="From"
+                      value={Thu1}
+                      onChange={handleInputChange7}
+                      className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
+                    />
+                  </div>
+                  <div>
+                    {/* <label className="block mb-1 font-semibold">Input 2</label> */}
+                    <input
+                      type="text"
+                      value={Thu2}
+                      placeholder="To"
+                      onChange={handleInputChange8}
+                      className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
+                    />
+                  </div>
+                </div>
+              )}
+              <label className="flex items-center space-x-2 py-2 py-2">
+                <input
+                  type="checkbox"
+                  checked={isChecked5}
+                  onChange={handleCheckboxChange5}
+                  className="form-checkbox"
+                />
+                <span>Friday</span>
+              </label>
+              {isChecked5 && (
+                <div className="p-2 border-gray-300 rounded grid gap-20 grid-cols-2">
+                  <div>
+                    {/* <label className="block mb-1 font-semibold">Input 1</label> */}
+                    <input
+                      type="text"
+                      placeholder="From"
+                      value={Fri1}
+                      onChange={handleInputChange9}
+                      className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
+                    />
+                  </div>
+                  <div>
+                    {/* <label className="block mb-1 font-semibold">Input 2</label> */}
+                    <input
+                      type="text"
+                      value={Fri2}
+                      placeholder="To"
+                      onChange={handleInputChange10}
+                      className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
+                    />
+                  </div>
+                </div>
+              )}
+              <label className="flex items-center space-x-2 py-2 py-2">
+                <input
+                  type="checkbox"
+                  checked={isChecked6}
+                  onChange={handleCheckboxChange6}
+                  className="form-checkbox"
+                />
+                <span>Saturday</span>
+              </label>
+              {isChecked6 && (
+                <div className="p-2 border-gray-300 rounded grid gap-20 grid-cols-2">
+                  <div>
+                    {/* <label className="block mb-1 font-semibold">Input 1</label> */}
+                    <input
+                      type="text"
+                      placeholder="From"
+                      value={Sat1}
+                      onChange={handleInputChange11}
+                      className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
+                    />
+                  </div>
+                  <div>
+                    {/* <label className="block mb-1 font-semibold">Input 2</label> */}
+                    <input
+                      type="text"
+                      value={Sat2}
+                      placeholder="To"
+                      onChange={handleInputChange12}
+                      className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
+                    />
+                  </div>
+                </div>
+              )}
+              <label className="flex items-center space-x-2 py-2">
+                <input
+                  type="checkbox"
+                  checked={isChecked7}
+                  onChange={handleCheckboxChange7}
+                  className="form-checkbox"
+                />
+                <span>Sunday</span>
+              </label>
+              {isChecked7 && (
+                <div className="p-2 border-gray-300 rounded grid gap-20 grid-cols-2">
+                  <div>
+                    {/* <label className="block mb-1 font-semibold">Input 1</label> */}
+                    <input
+                      type="text"
+                      placeholder="From"
+                      value={Sun1}
+                      onChange={handleInputChange13}
+                      className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
+                    />
+                  </div>
+                  <div>
+                    {/* <label className="block mb-1 font-semibold">Input 2</label> */}
+                    <input
+                      type="text"
+                      value={Sun2}
+                      placeholder="To"
+                      onChange={handleInputChange14}
+                      className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
+                    />
+                  </div>
+                </div>
+              )}
+              <p>____________________________________________________</p>
+            </div>
+            <div className="flex items-center py-4">
+              <p className="font-semibold mr-5">
+                Block the date and time of unavailable{" "}
+              </p>
+              <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-1 px-4 rounded flex items-center space-x-2">
+                <svg
+                  className="w-5 h-7"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                  />
+                </svg>
+                <span>Add Schedule</span>
+              </button>
+            </div>
+            <div className="flex p-2 pt-4">
+              <Link to="/">
+                <button className="text-white hover:bg-indigo-400 bg-black p-3 text-[14px] rounded-md">
+                  Save Changes
+                </button>
+              </Link>
+              <Link to="/settings">
+                <button className="text-[15px] p-3 pl-8 hover:text-red-500">
+                  {" "}
+                  Reset
+                </button>
+              </Link>
             </div>
           </div>
         </TabPanel>
@@ -601,4 +615,3 @@ export default function LabTabs(){
     </Box>
   );
 }
-// export  profiledet;
