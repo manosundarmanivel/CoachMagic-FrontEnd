@@ -61,7 +61,6 @@ const Invite2 =()=>
     ]
     return(
         <div className="font-poppins">
-            <Header/>
             <div className="grid grid-cols-[1fr_5fr]">
             <div className="m-5">
                 <div className="flex gap-44 items-baseline">
@@ -72,72 +71,72 @@ const Invite2 =()=>
                 <h1 className="font-bold items-center text-[15px] p-2">Experience</h1>
                 <label className='flex items-center pl-2'>
                     <input className='checkbox checkbox-sm shrink-0 rounded-sm focus:ring:0 accent-indigo-500 to-blue-500' type="checkbox" class="checkbox"/>
-                    <span class="select-none text-sm ml-2 font-semibold ">0yrs-1yrs</span>
+                    <span class="select-none text-sm ml-2">0yrs-1yrs</span>
                 </label> 
                 <label className='flex items-center pl-2'>
                     <input className='checkbox checkbox-sm shrink-0 rounded-sm focus:ring:0 accent-indigo-500 to-blue-500' type="checkbox" class="checkbox"/>
-                    <span class="select-none text-sm ml-2 font-semibold ">2yrs-4yrs</span>
+                    <span class="select-none text-sm ml-2 ">2yrs-4yrs</span>
                 </label> 
                 <label className='flex items-center pl-2'>
                     <input className='checkbox checkbox-sm shrink-0 rounded-sm focus:ring:0 accent-indigo-500 to-blue-500' type="checkbox" class="checkbox"/>
-                    <span class="select-none text-sm ml-2 font-semibold ">4yrs-6yrs</span>
+                    <span class="select-none text-sm ml-2">4yrs-6yrs</span>
                 </label> 
                 <label className='flex items-center pl-2'>
                     <input className='checkbox checkbox-sm shrink-0 rounded-sm focus:ring:0 accent-indigo-500 to-blue-500' type="checkbox" class="checkbox"/>
-                    <span class="select-none text-sm ml-2 font-semibold ">7yrs-8yrs</span>
+                    <span class="select-none text-sm ml-2">7yrs-8yrs</span>
                 </label> 
                 <label className='flex items-center pl-2 pb-2'>
                     <input className='checkbox checkbox-sm shrink-0 rounded-sm focus:ring:0 accent-indigo-500 to-blue-500' type="checkbox" class="checkbox"/>
-                    <span class="select-none text-sm ml-2 font-semibold ">&gt;10yrs</span>
+                    <span class="select-none text-sm ml-2 ">&gt;10yrs</span>
                 </label> 
                 </div>
                 <div className="shadow shadow-[#0094FF] w-full rounded mt-5">
                 <h1 className="font-bold items-center text-[15px] p-2">Timing</h1>
                 <label className='flex items-center pl-2'>
                     <input className='checkbox checkbox-sm shrink-0 rounded-sm focus:ring:0 accent-indigo-500 to-blue-500' type="checkbox" class="checkbox"/>
-                    <span class="select-none text-sm ml-2 font-semibold ">AM</span>
+                    <span class="select-none text-sm ml-2">AM</span>
                 </label> 
                 <label className='flex items-center pl-2 pb-2'>
                     <input className='checkbox checkbox-sm shrink-0 rounded-sm focus:ring:0 accent-indigo-500 to-blue-500' type="checkbox" class="checkbox"/>
-                    <span class="select-none text-sm ml-2 font-semibold ">PM</span>
+                    <span class="select-none text-sm ml-2">PM</span>
                 </label> 
              </div>  
              <div className="shadow shadow-[#0094FF] w-full rounded mt-5">
                 <h1 className="font-bold items-center text-[15px] p-2">Budget</h1>
                 <label className='flex items-center pl-2'>
                     <input className='checkbox checkbox-sm shrink-0 rounded-sm focus:ring:0 accent-indigo-500 to-blue-500' type="checkbox" class="checkbox"/>
-                    <span class="select-none text-sm ml-2 font-semibold ">Under &#8377;100</span>
+                    <span class="select-none text-sm ml-2">Under &#8377;100</span>
                 </label>
                 <label className='flex items-center pl-2'>
                     <input className='checkbox checkbox-sm shrink-0 rounded-sm focus:ring:0 accent-indigo-500 to-blue-500' type="checkbox" class="checkbox"/>
-                    <span class="select-none text-sm ml-2 font-semibold ">&#8377;100-&#8377;300</span>
+                    <span class="select-none text-sm ml-2">&#8377;100-&#8377;300</span>
                 </label>
                 <label className='flex items-center pl-2'>
                     <input className='checkbox checkbox-sm shrink-0 rounded-sm focus:ring:0 accent-indigo-500 to-blue-500' type="checkbox" class="checkbox"/>
-                    <span class="select-none text-sm ml-2 font-semibold ">&#8377;300-&#8377;600</span>
+                    <span class="select-none text-sm ml-2">&#8377;300-&#8377;600</span>
                 </label>
                 <label className='flex items-center pl-2'>
                     <input className='checkbox checkbox-sm shrink-0 rounded-sm focus:ring:0 accent-indigo-500 to-blue-500' type="checkbox" class="checkbox"/>
-                    <span class="select-none text-sm ml-2 font-semibold ">&#8377;600-&#8377;900</span>
+                    <span class="select-none text-sm ml-2">&#8377;600-&#8377;900</span>
                 </label>
                 <label className='flex items-center pl-2 pb-2'>
                     <input className='checkbox checkbox-sm shrink-0 rounded-sm focus:ring:0 accent-indigo-500 to-blue-500' type="checkbox" class="checkbox"/>
-                    <span class="select-none text-sm ml-2 font-semibold ">Above &#8377;1000</span>
+                    <span class="select-none text-sm ml-2">Above &#8377;1000</span>
                 </label>
             </div>  
             <div className="shadow shadow-[#0094FF] w-full rounded mt-5">
                 <h1 className="font-bold items-center text-[15px] p-2">Tag</h1>
                 <label className='flex items-center pl-2'>
                     <input className='checkbox checkbox-sm shrink-0 rounded-sm focus:ring:0 accent-indigo-500 to-blue-500' type="checkbox" class="checkbox"/>
-                    <span class="select-none text-sm ml-2 font-semibold ">Warrior</span>
+                    <span class="select-none text-sm ml-2">Warrior</span>
                 </label> 
                 <label className='flex items-center pl-2'>
                     <input className='checkbox checkbox-sm shrink-0 rounded-sm focus:ring:0 accent-indigo-500 to-blue-500' type="checkbox" class="checkbox"/>
-                    <span class="select-none text-sm ml-2 font-semibold ">Leader</span>
+                    <span class="select-none text-sm ml-2">Leader</span>
                 </label> 
                 <label className='flex items-center pl-2 pb-2'>
                     <input className='checkbox checkbox-sm shrink-0 rounded-sm focus:ring:0 accent-indigo-500 to-blue-500' type="checkbox" class="checkbox"/>
-                    <span class="select-none text-sm ml-2 font-semibold ">Mentor</span>
+                    <span class="select-none text-sm ml-2">Mentor</span>
                 </label> 
             </div>            
                 </div>
@@ -203,7 +202,7 @@ const Invite2 =()=>
                             {/* invite begins */}
                             <div className="flex flex-col justify-evenly items-center">
                             <button className="flex border rounded-3xl text-white p-2 bg-[#8284EA]">
-                                <p className="mx-1">Invite</p>
+                                <p className="mx-1">INVITE</p>
                                 <SendIcon/>
                             </button>
                             <div>
