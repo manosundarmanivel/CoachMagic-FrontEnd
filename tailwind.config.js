@@ -1,6 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [ "./src/**/*.js"],
+  darkMode:"class",
+  module: {
+    rules: [
+      // ... other rules
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader', 'postcss-loader'],
+      },
+    ],
+  },
   theme: {
     fontSize: {
       title: `2.6rem;`,
