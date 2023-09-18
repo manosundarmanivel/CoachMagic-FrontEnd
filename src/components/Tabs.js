@@ -24,7 +24,11 @@ export default function LabTabs() {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+  const [isToggled, setIsToggled] = useState(false);
 
+  const toggleSwitch = () => {
+    setIsToggled(!isToggled);
+  };
   const [selectedTimezone, setSelectedTimezone] = useState(timezones[0]);
 
   const handleTimezoneChange = (event) => {
@@ -149,6 +153,7 @@ export default function LabTabs() {
             <Tab label="Profile" value="1" />
             <Tab label="Education & Skills" value="2" />
             <Tab label="Schedule" value="3" />
+            <Tab label="Pricing" value="4" />
           </TabList>
         </Box>
         <TabPanel value="1">
@@ -609,6 +614,83 @@ export default function LabTabs() {
                 </button>
               </Link>
             </div>
+          </div>
+        </TabPanel>
+        <TabPanel value="4">
+          <div classname="">
+          <p className="flex justify-center font-semibold  text-[1.5em]">Let's Connect For Questions & Answer Session</p>
+          <br/>
+          <br/>
+
+             <div className="flex justify-between">
+              <label for="audio_fee" className="mx-2">Audio 
+                <input type="text" id="audio_fee" placeholder="Ruppees" className="border mx-2 rounded-md "/>/min
+              </label>
+              <label for="video_fee">Video 
+                <input type="text" id="video_fee" placeholder="Ruppees" className="border mx-2 rounded-md "/>/min
+              </label>
+             </div>
+                <br/>
+              
+              <div className="flex flex-col gap-4 ">
+             <label className="font-bold">
+                Schools
+             </label> 
+              <select className="">
+                <option>Select one</option>
+                <option>Acharya vidhaybhavan Matriculation Higher Secondary School</option>
+                <option>Acharya vidhaybhavan Matriculation Higher Secondary School</option>
+                <option>Acharya vidhaybhavan Matriculation Higher Secondary School</option>
+                <option>Acharya vidhaybhavan Matriculation Higher Secondary School</option>
+              </select>
+              </div>
+
+                <br/>
+
+              <div className="flex flex-col gap-4 ">
+             <label className="font-bold">
+                Colleges
+             </label>
+              <select className="">
+                <option>Select one</option>
+                <option>Kongu Engineering College</option>
+                <option>Kumaraguru Engineering College</option>
+                <option>Sri krishna Engineering College</option>
+                <option>Sri Ramakrishna Engineering College</option>
+
+              </select>
+              </div>
+              
+                <br/>
+                <br/>
+
+
+                <div className="flex justify-evenly">
+                  <p>Free Tutoring</p>
+                  <div className={`w-12 h-6 bg-violet-400 rounded-full cursor-pointer ${isToggled ? "dark" : " "}`} onClick={toggleSwitch}>
+                    <div className="border w-4 h-4 bg-white rounded-full flex justify-start  m-1 dark:mx-7"></div>
+                  </div>
+                </div>
+                
+                <br/>
+                <br/>
+                <br/>
+
+                {
+                  isToggled &&
+                  <div className="flex justify-center">
+                  <p>Your code is  <span className="border p-2 bg-slate-200 rounded-xl">540454</span></p>
+                  <br/>
+                  <br/>
+                  <br/>
+                  </div>
+                  
+                }
+
+                <div className="flex justify-center">
+                <button className="border rounded-full bg-violet-400 py-1 px-3">Proceed</button>
+                </div>
+
           </div>
         </TabPanel>
       </TabContext>
