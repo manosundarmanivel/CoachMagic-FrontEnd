@@ -13,6 +13,7 @@ import ProfilePage from './components/profile';
 import Invite from './components/Invite';
 import Invite2 from './components/Invite2';
 // import Test from './components/testing';
+import Connect from './components/Connect'
 const appRouter = createBrowserRouter([
   {
     path:'/',
@@ -33,12 +34,20 @@ const appRouter = createBrowserRouter([
       {
         path:'//invitations',
         element:<Invite2/>
+      },
+      {
+        path:'/Connectpage',
+        element:<Connect/>
       }
     ]
   },
   {
     path:'/signin',
     element:<Signin/>
+  },
+  {
+    path:'/ConnectPage',
+    element:<Connect/>
   },
   {
     path:'/signup',
