@@ -624,10 +624,10 @@ export default function LabTabs() {
 
              <div className="flex justify-between">
               <label for="audio_fee" className="mx-2">Audio 
-                <input type="text" id="audio_fee" placeholder="Ruppees" className="border mx-2 rounded-md "/>/min
+                <input type="text" id="audio_fee" placeholder="Rupees" className="border mx-2 rounded-md "/>/min
               </label>
               <label for="video_fee">Video 
-                <input type="text" id="video_fee" placeholder="Ruppees" className="border mx-2 rounded-md "/>/min
+                <input type="text" id="video_fee" placeholder="Rupees" className="border mx-2 rounded-md "/>/min
               </label>
              </div>
                 <br/>
