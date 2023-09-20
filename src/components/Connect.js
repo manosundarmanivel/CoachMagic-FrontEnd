@@ -22,12 +22,12 @@ function Connect() {
         </div>
 
         <div className="flex flex-row justify-center py-12 -ml-2.5">
-          <div className="w-[260px] px-5  transform transition duration-300 hover:scale-125">
-            <div className="flex flex-col bg-[conic-gradient(at_top_right,_var(--tw-gradient-stops))] from-sky-800 via-stone-800 to-indigo-200 h-[250px] justify-center items-center rounded-3xl">
-              <div className="">
-                <img src={compic} alt="Community"></img>
+        <div className="w-[260px] px-5  transform transition duration-300 hover:scale-125">
+            <div className="flex flex-col bg-[conic-gradient(at_top_right,_var(--tw-gradient-stops))]  from-sky-800 via-stone-600 to-indigo-200 h-[250px] justify-center items-center rounded-3xl">
+              <div className="w-[150px]">
+                <img src={ivspic} alt="Community"></img>
               </div>
-              <div className="mt-3">
+              <div className="py-3">
                 <a
                   href="#_"
                   class="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-blue-600 transition duration-300 ease-out border-2 border-blue-500 rounded-full shadow-md group"
@@ -48,10 +48,10 @@ function Connect() {
                       ></path>
                     </svg>
                   </span>
-                  <span class="absolute flex items-center justify-center w-full h-full text-orange-500 transition-all duration-300 transform group-hover:translate-x-full ease">
-                    Community
+                  <span class="absolute flex items-center justify-center w-full h-full text-[#68D391] transition-all duration-300 transform group-hover:translate-x-full ease">
+                    Invite Sent
                   </span>
-                  <span class="relative invisible">Community</span>
+                  <span class="relative invisible">Invite Sent</span>
                 </a>
               </div>
 
@@ -59,7 +59,7 @@ function Connect() {
             </div>
           </div>
           <div className="w-[260px] px-5  transform transition duration-300 hover:scale-125">
-            <div className="flex flex-col bg-[conic-gradient(at_top_right,_var(--tw-gradient-stops))] from-sky-800 via-stone-800 to-indigo-200 h-[250px] justify-center items-center rounded-3xl">
+            <div className="flex flex-col bg-[conic-gradient(at_top_right,_var(--tw-gradient-stops))]  from-sky-800 via-stone-600 to-indigo-200 h-[250px] justify-center items-center rounded-3xl">
               <div className="">
                 <img src={ivgpic} alt="Inviteget"></img>
               </div>
@@ -95,11 +95,11 @@ function Connect() {
             </div>
           </div>
           <div className="w-[260px] px-5  transform transition duration-300 hover:scale-125">
-            <div className="flex flex-col bg-[conic-gradient(at_top_right,_var(--tw-gradient-stops))] from-sky-800 via-stone-800 to-indigo-200 h-[250px] justify-center items-center rounded-3xl">
-              <div className="w-[150px]">
-                <img src={ivspic} alt="Community"></img>
+            <div className="flex flex-col bg-[conic-gradient(at_top_right,_var(--tw-gradient-stops))] from-sky-800 via-stone-600 to-indigo-200 h-[250px] justify-center items-center rounded-3xl">
+              <div className="">
+                <img src={compic} alt="Community"></img>
               </div>
-              <div className="py-3">
+              <div className="mt-3">
                 <a
                   href="#_"
                   class="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-blue-600 transition duration-300 ease-out border-2 border-blue-500 rounded-full shadow-md group"
@@ -120,16 +120,18 @@ function Connect() {
                       ></path>
                     </svg>
                   </span>
-                  <span class="absolute flex items-center justify-center w-full h-full text-[#68D391] transition-all duration-300 transform group-hover:translate-x-full ease">
-                    Invite Sent
+                  <span class="absolute flex items-center justify-center w-full h-full text-orange-500 transition-all duration-300 transform group-hover:translate-x-full ease">
+                    Community
                   </span>
-                  <span class="relative invisible">Invite Sent</span>
+                  <span class="relative invisible">Community</span>
                 </a>
               </div>
 
               <div></div>
             </div>
           </div>
+          
+
         </div>
         <div className="flex justify-center items-center">
         <a

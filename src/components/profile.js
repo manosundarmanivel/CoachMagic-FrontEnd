@@ -32,15 +32,16 @@ const ProfilePage = () => {
 
   const backgroundImage = require("../img/whatsapp.png");
   return (
-    <div className="py-[90px] ml-[300px] p-10">
-      <div className="bg-purple-300 p-10 rounded-3xl flex">
+    <div className="">
+    <div className="py-[33px] ml-[100px] p-10">
+      <div className="bg-purple-300 p-7 rounded-3xl flex">
         <div className=" bg-white flex rounded-3xl py-2">
-          <div className=" flex flex-col bg-white   rounded-3xl  transform transition duration-300 hover:scale-125">
+          <div className=" flex flex-col bg-white   rounded-3xl ">
             <div className="flex flex-col items-center font-poppins">
               <img
                 src={bropic}
                 alt="Profile"
-                className="w-35 h-35  transform transition duration-500 hover:scale-125"
+                // className="w-35 h-35  transform transition duration-500 hover:scale-125"
               />
               {/* <InputText
               type="file"
@@ -179,6 +180,7 @@ const ProfilePage = () => {
           </div>
         )}
       </div>
+    </div>
     </div>
   );
 };

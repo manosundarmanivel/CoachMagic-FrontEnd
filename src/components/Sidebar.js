@@ -9,6 +9,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import AssessmentIcon from "@mui/icons-material/Assessment";
 import PaymentIcon from "@mui/icons-material/Payment";
 import LogoutIcon from "@mui/icons-material/Logout";
+import Person2Icon from '@mui/icons-material/Person2';
 
 const Sidebar = () => {
   //   const DashboardList = [
@@ -68,9 +69,17 @@ const Sidebar = () => {
         <Link to="/profile">
           <div className="flex pt-4 pb-4 items-center hover:text-[#0094FE]">
             <div>
-              <SettingsIcon />
+              <Person2Icon />
             </div>
             <h1 className="pl-3 text-[18px]">Profile</h1>
+          </div>
+        </Link>
+        <Link to="/Connect">
+          <div className="flex pt-4 pb-4 items-center hover:text-[#0094FE]">
+            <div>
+              <SettingsIcon />
+            </div>
+            <h1 className="pl-3 text-[18px]">Connect</h1>
           </div>
         </Link>
       </div>

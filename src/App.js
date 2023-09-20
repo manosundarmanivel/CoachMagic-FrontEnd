@@ -36,7 +36,7 @@ const appRouter = createBrowserRouter([
         element:<Invite2/>
       },
       {
-        path:'/Connectpage',
+        path:'/Connect',
         element:<Connect/>
       }
     ]
