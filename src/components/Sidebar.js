@@ -1,9 +1,9 @@
 import React from "react";
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import DashHead from "./DashHead";
-import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+// import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import { Link } from "react-router-dom";
-import Proflie from "../img/Avatar Image.svg";
+// import Proflie from "../img/Avatar Image.svg";
 import SettingsIcon from "@mui/icons-material/Settings";
 import HomeIcon from "@mui/icons-material/Home";
 import AssessmentIcon from "@mui/icons-material/Assessment";
@@ -83,20 +83,20 @@ const Sidebar = () => {
           </div>
         </Link>
       </div>
+      <div className="mb-4">
       <Link to="/settings">
-        <div className="flex items-center mt-80">
-          <img alt="img" src={Proflie} />
-          <div className="p-2">
-            <h1 className="text-[16px] font-semibold">Mano Sundar M</h1>
-            <h1 className="text-[12px]">manosundar@gmail.com</h1>
+        <div className="mt-2 absolute top-0 right-0  flex items-center mt-55">
+          {/* <img alt="img" src={Proflie} className="mr-1 w-10 h-10"/> */}
+          <div className="mr-1">
+            <h1 className="text-[16px] font-semibold text-red-500">Logout</h1>
+            {/* <h1 className="text-[12px]">manosundar@gmail.com</h1> */}
           </div>
-
-          <div className="flex items-center">
+          <div className="flex items-center mr-5">
             <LogoutIcon />
-            <ArrowDropDownIcon />
+            {/* <ArrowDropDownIcon /> */}
           </div>
         </div>
-      </Link>
+      </Link></div>
     </div>
   );
 };

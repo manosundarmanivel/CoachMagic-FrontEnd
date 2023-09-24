@@ -17,7 +17,7 @@ const Community = () => {
     </div>
     <div>hi</div>
     </div> */}
-      <div className="flex flex-row font-poppins py-5">
+      <div className="ml-5 flex flex-row font-poppins py-8">
         <div className="bg-[conic-gradient(at_top_right,_var(--tw-gradient-stops))]  from-sky-700 via-stone-600 to-indigo-200 p-5 rounded-2xl  shadow-md">
           <div className="flex flex-col mb-4">
             <div>
@@ -58,7 +58,7 @@ const Community = () => {
               </form>
             </div>
           </div>
-          <div className=" w-[400px] h-[580px] overflow-y-auto text-white">
+          <div className=" w-[380px] h-[520px] overflow-y-auto text-white">
             <div className="flex flex-col">
               <div className="flex flex-row">
                 <div>
@@ -198,8 +198,8 @@ const Community = () => {
               
           </div>
         </div>
-        <div className="relative ml-5 bg-gray-25 w-[700px] h-[690px] rounded-2xl shadow-md border-2 border-gray-300">
-        <div className="flex flex-col w-[700px] h-[690px] p-4">
+        <div className="relative ml-[45px] bg-gray-25 w-[600px] h-[630px] rounded-2xl shadow-md border-2 border-blue-200">
+        <div className="flex flex-col w-[600px] h-[630px] p-4">
           <div className="flex flex-row mb-2 bg-slate-100 py-2 rounded-md">
           <div className="drop-shadow-2xl ml-3"><img className=" rounded-full h-10 w-10 border-none items-center shadow-md" src={ivgpic} alt="profile pic"/></div>
             

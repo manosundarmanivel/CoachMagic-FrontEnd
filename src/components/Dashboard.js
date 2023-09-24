@@ -13,7 +13,8 @@ const Dashboard = () => {
   return (
     <div className="flex flex-col p-10 rounded-3xl w-max flex-wrap font-poppins  ">
       <div>
-        <h1 className=" text-[40px] ml-center">Welcome {name}</h1>
+        <h1 className=" text-[40px] ml-center">Welcome back{" "}
+        <span className="animate-pulse bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">{name}!</span></h1>
       </div>
       <div className="flex">
         <div className="flex">
