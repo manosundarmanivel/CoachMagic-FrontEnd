@@ -1,10 +1,7 @@
 
 import './App.css';
-
 import {RouterProvider, createBrowserRouter} from 'react-router-dom'
-
 import Dashboard from "./components/Dashboard";
-
 import Settings from "./components/Settings";
 import Main from "./components/Main";
 import Signin from './components/Signin';
@@ -14,6 +11,7 @@ import Invite from './components/Invite';
 import Invite2 from './components/Invite2';
 import Community from './components/Community';
 import Connect from './components/Connect'
+import Query from './components/Query';
 const appRouter = createBrowserRouter([
   {
     path:'/',
@@ -43,6 +41,10 @@ const appRouter = createBrowserRouter([
         path:'/community',
         element:<Community/>
 
+      },
+      {
+        path:'/query',
+        element:<Query/>
       }
     ]
   },
@@ -73,6 +75,11 @@ const appRouter = createBrowserRouter([
   {
       path:'/community',
       element:<Community/> 
+  },
+  {
+    path:'/query',
+    element:<Query/>
+
   }
  
 ])
