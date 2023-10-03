@@ -11,18 +11,21 @@ import { Link } from "react-router-dom";
 const name = "Nekelash";
 const Dashboard = () => {
   return (
-    <div className="flex flex-col p-10 rounded-3xl w-max flex-wrap font-poppins  ">
-      <div>
-        <h1 className=" text-[40px] ml-center">Welcome back{" "}
-        <span className="animate-pulse bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">{name}!</span></h1>
-      </div>
-      <div className="flex">
-        <div className="flex">
-          <div>
-            <div className="flex flex-wrap bg-white p-3 mt-5 mx-auto rounded-2xl justify-around shadow-md ">
+    <div className="flex flex-col p-10 rounded-3xl w-max font-poppins  ">
+      {/* <div>
+        <h1 className=" text-[40px] ml-center">
+          Welcome back{" "}
+          <span className="animate-pulse bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
+            {name}!
+          </span>
+        </h1>
+      </div> */}
+      <div className="flex flex-row">
+          <div className="justify items-center">
+            <div className="flex flex-wrap w-[500px] h-[180px] bg-white p-3 mt-5 mx-auto rounded-2xl justify-around shadow-md ">
               <div className="m-5 ">
                 <h1 className="text-[16px] text-[#958C8C]">Total Earnings</h1>
-                <h2 className="text-[32px] pt-2 pb-2">$52,258.32</h2>
+                <h2 className="text-[25px] pt-2 pb-2">$52,258.32</h2>
                 <div className="bg-[#E3FFF3] w-[78px] text-center p-2 rounded-full">
                   <h1>+12%</h1>
                 </div>
@@ -31,21 +34,23 @@ const Dashboard = () => {
 
               <div className="m-5">
                 <h1 className="text-[16px] text-[#958C8C]">Total Invites</h1>
-                <h2 className="text-[32px] pt-2 pb-2">248</h2>
+                <h2 className="text-[25px] pt-2 pb-2">248</h2>
                 <div className="bg-[#E3FFF3] w-[78px] text-center p-2 rounded-full">
                   <h1>+8%</h1>
                 </div>
               </div>
               <div className="m-5 ">
                 <h1 className="text-[16px] text-[#958C8C]">Total reach</h1>
-                <h2 className="text-[32px] pt-2 pb-2">2.582.322</h2>
+                <h2 className="text-[25px] pt-2 pb-2">2.582.322</h2>
                 <div className="bg-[#FFE3E3] w-[78px] text-center p-2 rounded-full">
                   <h1>-11%</h1>
                 </div>
               </div>
             </div>
-            <div className="bg-white p-3 mt-5 w-full rounded-2xl shadow-md">
-              <div className="flex justify-between p-2">
+          </div>
+          <div className="flex flex-wrap">
+              <div className=" bg-white p-3 mt-5 w-[600px] rounded-2xl shadow-md">
+              <div className="flex justify-between p-2 ">
                 <h1>Your Meetings</h1>
                 <KeyboardArrowDownIcon />
               </div>
@@ -160,7 +165,7 @@ const Dashboard = () => {
                   </div>
                   <div className="flex w-1/3 justify-between">
                     <div className="bg-[#FFEDED] p-3 text-[13px] text-[#942626] rounded-lg">
-                      Cancled
+                      Canceled
                     </div>
                     <div className="flex ">
                       <div className="border-2 rounded-full m-1 p-1">
@@ -179,15 +184,14 @@ const Dashboard = () => {
               </div>
             </div>
           </div>
-        </div>
       </div>
-      <div className=" mt-[80px] mb-10 p-5 ml-7 h-3/5 bg-[#def2fa] rounded-2xl ">
+      {/* <div className=" mt-[80px] mb-10 p-5 ml-7 h-3/5 bg-[#def2fa] rounded-2xl ">
         <div className="flex justify-between">
           <h1 className="text-[28px] mt-5 font-semibold">Calendar</h1>
           <MoreHorizIcon />
         </div>
         <BasicDateCalendar />
-      </div>
+      </div> */}
     </div>
   );
 };

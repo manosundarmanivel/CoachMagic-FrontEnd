@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // import ivgpic from "../img/inviteget.png";
 import ivgpic from "../img/bro-prof.png";
 import pro1 from "../img/profile1.jpeg";
@@ -9,6 +9,17 @@ import pro5 from "../img/profile5.jpeg";
 import pro6 from "../img/profile6.jpeg";
 import pro7 from "../img/profile7.png";
 const Community = () => {
+  const [com1,setCom1] = useState("Devops");
+  const [com2,setCom2] = useState("Mechanical");
+  const [com3,setCom3] = useState("Cyber Security");
+  const [com4,setCom4] = useState("Machine Learning");
+  const [com5,setCom5] = useState("SAP");
+  const [com6,setCom6] = useState("Front-End");
+  const [com7,setCom7] = useState("EV");
+  const [com8,setCom8] = useState("Back-End");
+
+  const [devq,setDevq] = useState("your Query here");
+
   return (
     <div>
       {/* <div className="flex flex-row">
@@ -61,15 +72,17 @@ const Community = () => {
           <div className=" w-[380px] h-[520px] overflow-y-auto text-white">
             <div className="flex flex-col">
               <div className="flex flex-row">
-                <div>
+                <div className="relative">
                   <img className="rounded-full w-14 h-14" alt="Dp" src={ivgpic} />
+                        {/* <div className="absolute top-0 right-0 w-3 h-3 animate-pulse bg-gradient-to-r from-red-500 to-red-600 bg-red-600 rounded-full"></div> */}
+
                 </div>
                 <div className="flex flex-row ml-2 items-center">
                   <div className="flex flex-col">
-                    <div>RV SYED</div>
+                    <div>{com2}</div>
                     <div class="text-[13px]">bye...</div>
                   </div>
-                  <div className="ml-[150px] text-[13px]">9:40am</div>
+                  {/* <div className="ml-[150px] text-[13px]">9:40am</div> */}
                 </div>
               </div>
               <div class="py-4">
@@ -78,15 +91,17 @@ const Community = () => {
             </div>
             <div className="flex flex-col">
               <div className="flex flex-row">
-                <div>
+                <div className="relative">
                   <img className="rounded-full w-14 h-14" alt="Dp" src={pro7} />
+                  <div className="absolute top-0 right-0 w-3 h-3 animate-pulse bg-gradient-to-r from-red-500 to-red-600 bg-red-600 rounded-full"></div>
+
                 </div>
                 <div className="flex flex-row ml-2 items-center">
                   <div className="flex flex-col">
-                    <div>Kamalesh</div>
-                    <div class="text-[13px]">how are you neke</div>
+                    <div>{com1}</div>
+                    <div class="text-[13px]">{devq}</div>
                   </div>
-                  <div className="ml-[100px] text-[13px]">9:30am</div>
+                  {/* <div className="ml-[110px] text-[13px]">9:30am</div> */}
                 </div>
               </div>
               <div class="py-4">
@@ -100,10 +115,10 @@ const Community = () => {
                 </div>
                 <div className="flex flex-row ml-2 items-center">
                   <div className="flex flex-col">
-                    <div>Sharvita</div>
+                    <div>{com4}</div>
                     <div class="text-[13px]">how are you neke</div>
                   </div>
-                  <div className="ml-[100px] text-[13px]">9:20am</div>
+                  {/* <div className="ml-[100px] text-[13px]">9:20am</div> */}
                 </div>
               </div>
               <div class="py-4">
@@ -117,10 +132,10 @@ const Community = () => {
                 </div>
                 <div className="flex flex-row ml-2 items-center">
                   <div className="flex flex-col">
-                    <div>Malarvizhi</div>
+                    <div>{com3}</div>
                     <div class="text-[13px]">how are you neke</div>
                   </div>
-                  <div className="ml-[100px] text-[13px]">9:18am</div>
+                  {/* <div className="ml-[100px] text-[13px]">9:18am</div> */}
                 </div>
               </div>
               <div class="py-4">
@@ -134,10 +149,10 @@ const Community = () => {
                 </div>
                 <div className="flex flex-row ml-2 items-center">
                   <div className="flex flex-col">
-                    <div>Nekelash</div>
+                    <div>{com6}</div>
                     <div class="text-[13px]">how are you neke</div>
                   </div>
-                  <div className="ml-[100px] text-[13px]">9:10am</div>
+                  {/* <div className="ml-[100px] text-[13px]">9:10am</div> */}
                 </div>
               </div>
               <div class="py-4">
@@ -151,10 +166,10 @@ const Community = () => {
                 </div>
                 <div className="flex flex-row ml-2 items-center">
                   <div className="flex flex-col">
-                    <div>Sruti</div>
+                    <div>{com5}</div>
                     <div class="text-[13px]">how are you neke</div>
                   </div>
-                  <div className="ml-[100px] text-[13px]">9:40am</div>
+                  {/* <div className="ml-[100px] text-[13px]">9:40am</div> */}
                 </div>
               </div>
               <div class="py-4">
@@ -168,10 +183,10 @@ const Community = () => {
                 </div>
                 <div className="flex flex-row ml-2 items-center">
                   <div className="flex flex-col">
-                    <div>Kiruthiya sree</div>
+                    <div>{com7}</div>
                     <div class="text-[13px]">how are you neke</div>
                   </div>
-                  <div className="ml-[100px] text-[13px]">9:40am</div>
+                  {/* <div className="ml-[100px] text-[13px]">9:40am</div> */}
                 </div>
               </div>
               <div class="py-4">
@@ -185,10 +200,10 @@ const Community = () => {
                 </div>
                 <div className="flex flex-row ml-2 items-center">
                   <div className="flex flex-col">
-                    <div>Mano Sundar</div>
+                    <div>{com8}</div>
                     <div class="text-[13px]">how are you neke</div>
                   </div>
-                  <div className="ml-[100px] text-[13px]">9:40am</div>
+                  {/* <div className="ml-[100px] text-[13px]">9:40am</div> */}
                 </div>
               </div>
               <div class="py-4">
@@ -203,7 +218,7 @@ const Community = () => {
           <div className="flex flex-row mb-2 bg-slate-100 py-2 rounded-md">
           <div className="drop-shadow-2xl ml-3"><img className=" rounded-full h-10 w-10 border-none items-center shadow-md" src={ivgpic} alt="profile pic"/></div>
             
-            <div className="p-2 ml-1"><label>RV SYED</label></div>
+            <div className="p-2 ml-1"><label>{com1}</label></div>
           </div>
           
           <div className="overflow-y-auto mb-12">
@@ -306,11 +321,13 @@ const Community = () => {
                 <div className="flex flex-row">
                 
                   <div>
+                  <div>
                     <img
                       className="rounded-full h-10 w-10 align-middle border-none"
                       src={ivgpic}
                       alt="Sender"
                     />
+                    </div>
                   </div>
                   <div class="flex flex-col">
                   <div className="bg-blue-500 rounded-2xl p-3 items-center ml-2 shadow-md">

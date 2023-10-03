@@ -25,6 +25,7 @@ const Query = () => {
               </span>
             </p>
           </div>
+          <div className="bg-gradient-to-br from-blue-200 via-orange-300 to-slate-300 p-7 rounded-3xl text-2xl">
           <form>
             <div className="flex flex-col ml-12">
               <div class="flex flex-row items-center py-4">
@@ -55,7 +56,7 @@ const Query = () => {
             </div>
             <h1 className="text-5xl py-3">
               Request About{" "}
-              <span className="animate-pulse bg-gradient-to-r from-red-600 to-red-950 inline-block text-transparent bg-clip-text">
+              <span className="animate-pulse bg-gradient-to-r from-red-600 to-red-600 inline-block font-extrabold text-transparent bg-clip-text">
                 ?
               </span>
             </h1>
@@ -73,11 +74,11 @@ const Query = () => {
                     />
                   </div>
                 </div>
-                <div className="child flex flex-row items-center py-3">
+                <div className="child flex flex-row items-center py-3 row-span-2">
                   <div className="ml-10">
-                    <label>Question : </label>{" "}
+                    <label>Question :</label>{" "}
                   </div>
-                  <div>
+                  <div class="w-1/2">
                     <textarea
                       type="text"
                       placeholder={"write your question here"}
@@ -128,7 +129,8 @@ const Query = () => {
               </div>
             </div>
           </form>
-          <div className="py-5">
+          </div>
+          {/* <div className="py-5">
             <button class="mb-2" onClick={handleButtonClick}>
             <h2 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">
                   Click to see previous Query state : 
@@ -186,7 +188,7 @@ const Query = () => {
                 </ul>
               </div>
             )}
-          </div>
+          </div> */}
         </div>
         <div className="py-8 mt-6 ml-8 text-[23px] font-poppins ">
         <div>Community <a href="/community"><button className="w-[97px] bg-slate-200 rounded-3xl items-center border border-gray-300 shadow-md"><span className="animate-pulse bg-gradient-to-l from-blue-600 via-green-600 to-indigo-400 inline-block text-transparent bg-clip-text">
