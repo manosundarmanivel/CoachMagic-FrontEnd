@@ -12,6 +12,8 @@ import Invite2 from './components/Invite2';
 import Community from './components/Community';
 import Connect from './components/Connect'
 import Query from './components/Query';
+import Inviteget from './components/Inviteget';
+import Feedback  from './components/Feedback';
 const appRouter = createBrowserRouter([
   {
     path:'/',
@@ -45,6 +47,10 @@ const appRouter = createBrowserRouter([
       {
         path:'/query',
         element:<Query/>
+      },
+      {
+        path:'/feedback',
+        element:<Feedback/>
       }
     ]
   },
@@ -80,6 +86,10 @@ const appRouter = createBrowserRouter([
     path:'/query',
     element:<Query/>
 
+  },
+  {
+    path:'/inviteget',
+    element:<Inviteget/>
   }
  
 ])
