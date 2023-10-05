@@ -25,7 +25,7 @@ const Query = () => {
               </span>
             </p>
           </div>
-          <div className="bg-gradient-to-br from-blue-200 via-orange-300 to-slate-300 p-7 rounded-3xl text-2xl">
+          <div className=" p-7 rounded-3xl text-2xl">
           <form>
             <div className="flex flex-col ml-12">
               <div class="flex flex-row items-center py-4">
